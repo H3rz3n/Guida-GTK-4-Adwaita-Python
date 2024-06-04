@@ -1,6 +1,13 @@
 # Guida all'utilizzo di GTK 4.0 ed Adwaita 1.0 in Python
 Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adwaita con il linguaggio Python. Attraverso brevi spiegazioni ed esempi scopriremo le fondamenta della programmazione ad oggetti attraverso l'uso di GTK 4 ed Adwaita fino ad arrivare alla creazione di programmi per GNU-Linux perfettamente integrati in GNOME.
 
+## Indice degli argomenti affrontati :
+- [Importare le librerie](https://github.com/H3rz3n/Guida-GTK-4-Adwaita-Python/edit/main/README.md#librerie-da-importare)
+- [Concetto di classe, oggetto e funzione in Python](https://github.com/H3rz3n/Guida-GTK-4-Adwaita-Python/edit/main/README.md#concetto-di-classe-oggetto-e-funzione-in-python)
+- [Creazione di una finestra di prova]()
+- [Introduzione al concetto di Box]()
+
+
 
 ## Librerie da importare
 Per poter iniziare ad utilizzare GTK è necessario importare nel nostro file Python alcune librerie utilizzando il seguente codice :
