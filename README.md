@@ -2,14 +2,38 @@
 Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adwaita con il linguaggio Python. Attraverso brevi spiegazioni ed esempi scopriremo le fondamenta della programmazione ad oggetti attraverso l'uso di GTK 4 ed Adwaita fino ad arrivare alla creazione di programmi per GNU-Linux perfettamente integrati in GNOME.
 
 ## Indice degli argomenti affrontati :
-- [Importare le librerie](https://github.com/H3rz3n/Guida-GTK-4-Adwaita-Python/edit/main/README.md#librerie-da-importare)
-- [Concetto di classe, oggetto e funzione in Python](https://github.com/H3rz3n/Guida-GTK-4-Adwaita-Python/edit/main/README.md#concetto-di-classe-oggetto-e-funzione-in-python)
-- [Creazione di una finestra di prova]()
-- [Introduzione al concetto di Box]()
+- Importare le librerie
+- Concetto di classe, oggetto e funzione in Python
+- Creazione di una finestra di prova
+- Introduzione al concetto di Box
+- Come inserire del testo in una finestra
+- Introduzione ai bottoni
+- Utilizzo dei bottoni
+- Introduzione all'utilizzo dei CSS
+- Esempi di utilizzo dei CSS
+- Come inserire un immagine in una finestra
+- Introduzione agli interruttori
+- Utilizzo degli interruttori
+- Introduzione alla checkbox
+- Utilizzo della checkbox
+- Introduzione 
+- Utilizzo
+- Introduzione 
+- Utilizzo
+- Introduzione 
+- Utilizzo
+- Introduzione 
+- Utilizzo
+- Introduzione 
+- Utilizzo
+- Introduzione 
+- Utilizzo
+- Introduzione 
+- Utilizzo 
 
 
 
-## Librerie da importare
+## Importare le librerie
 Per poter iniziare ad utilizzare GTK è necessario importare nel nostro file Python alcune librerie utilizzando il seguente codice :
 ```
   import sys, gi
@@ -30,3 +54,4 @@ Nonostante per la prima parte siano necessari sono ```Gtk``` ed ```Adw```, penso
 
 
 ## Concetto di classe, oggetto e funzione in Python
+Prima di procedere oltre è necessario chiarire i concetti di classe, oggetto e funzione all'interno di Pyhton.
