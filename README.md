@@ -1,4 +1,4 @@
-# Guida all'utilizzo di GTK 4.0 ed Adwaita 1.0 in Python
+# Guida all'utilizzo di GTK 4 ed Adwaita 1.0 in Python
 Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adwaita con il linguaggio Python. Attraverso brevi spiegazioni ed esempi scopriremo le fondamenta della programmazione ad oggetti attraverso l'uso di GTK 4 ed Adwaita fino ad arrivare alla creazione di programmi per GNU-Linux perfettamente integrati in GNOME.
 
 
@@ -24,4 +24,129 @@ Nonostante per la prima parte siano necessari sono ```Gtk``` ed ```Adw```, penso
 
 
 ## Concetto di classe, oggetto e funzione in Python
-Prima di procedere oltre è necessario chiarire i concetti di classe, oggetto e funzione all'interno di Pyhton.
+Prima di procedere oltre è necessario chiarire i concetti di funzione, classe e oggetto all'interno di Pyhton, in modo da poter comprendere meglio le strtture e la sintassi ch andremo ad utilizzare.
+
+### Concetto di funzione
+La definizione più semplice e corretta che possiamo dare di una funzione all'interno di un linguaggio di programmazione è "insieme di istruzioni riutilizzabili". Difatti una funzione altro non è che un insieme di istruzioni che possiamo richiamare a comando in un qualunque punto del nostro programma. Una funzione può essere utilizza a priori senza passaggio di variabili dall'esterno, può essere utilizzata acquisendo varibili esterne ed è possibile far uscire dei dati dal suo interno attraverso l'istruzione return. In ogni caso, tutte e funzioni vanno dichiarate prima dell'inzio del programma principale o "main". Vediamo tre esempi di funzioni con queste caratteristiche :
+
+Esempio di funzione senza passaggio di variabili :
+```
+# DEFINIZIONE DI UNA FUNZIONE SENZA PASSAGGIO DI VARIABILI
+def funzione_1 () :
+  a = 2
+  b = 5
+  c = (a + b)*2
+  print("funzione uno stampa sempre ",c)
+
+# INZIO MAIN
+
+# RICHIAMO LA FUNZIONE
+funzione_1()
+```
+
+Esempio di funzione con passaggio di variabili :
+```
+# DEFINIZIONE DI UNA FUNZIONE CON PASSAGGIO DI VARIABILI
+def funzione_2 (a, b) :
+  c = (a + b)*2
+  print("funzione due stampa ", c, "a seconda dei parametri "a" e "b" che gli passiamo quando la richiamiamo")
+
+# INIZIO MAIN
+
+# DEFINISCO A E B A MIO PIACERE
+a = 4
+b = input("Inserisci numero B : ")
+
+# RICHIAMO LA FUNZIONE PASSANDO LE VARIABILI
+funzione_2(a, b)
+```
+
+Un altra cosa utile da ricordare è il funzionamento dell'istruzione "return" all'interno delle funzioni. Essa ci permette di portare fuori dalla funzione uno più valori, siano essi numeri, stringhe o booleani. Vediamo un esempio dell'uso di return :
+```
+# DEFINIZIONE DI UNA FUNZIONE CHE UTILIZZA RETURN
+def funzione_3(b) :
+  a = 3
+  c = (a + b)*2
+
+  # PERMETTO L'USCITA DELLA VARIABILE C DALLA FUNZIONE
+  return c
+
+# INIZIO MAIN
+
+b = input("Inserisci il numero B : ")
+# COPIO LA VARIABILE C DELLA FUNZIONE NELLA VARIABILE D DEL PROGRAMMA
+d = funzione_3(b) 
+print("Il risultato è : ", d)
+```
+
+
+
+### Concetto di classe ed oggetto
+La classe è un concetto fondamentale della programmazione ad oggetti e può essere definita come il modello o progetto di un oggetto. Un buon esempio per comprendere il legame ed il funzionamento di classi ed oggetti è il seguente :
+> Immaginiamo la classe come un kit molto completo per preparare le torte. In questo kit sono presenti lo stampo per la torta che funge da contenitore e da ricetta per la stessa (la classe), gli ingredienti (le proprietà / caratteristiche dell'oggetto) e le varie occasioni per cui  preparare la torta (i metodi della classe / funzioni dell'oggetto).
+> Di conseguenza otteniamo :
+> - Lo stampo / contenitore e ricetta della torta : **la classe**
+> - L'insieme degli ingredienti della torta : **le proprietà / caratteristiche della classe**
+> - Le varie occasioni per preparare la torta : **I metodi della classe / funzioni dell'oggetto**
+La domanda che vi sorgerà spontanea è : "Dove e come rientra l'oggetto in questo insieme ?" L'oggetto altro non è che la torta. Noi possiamo avere avere una classe in grado di fornire diversi gusti di torte. Approfondiamo meglio la questione con esempio semplificato :
+
+```
+# CREO LA CLASSE DELLA TORTA
+class torta () :
+
+  # DEFINISCO LE PROPRIETÀ / CARATTERISTICHE DELLA TORTA
+  grandezza = ""
+  gusto = ""
+
+  # DEFINISCO ALCUNE OCCASIONI PER CUI VIENE REALIZZATA
+  def compleanno () :
+    print("Tanti auguri ! Ecco la tua torta !")
+
+  def successo_lavorativo () :
+    print("Complimenti per il tuo successo ! Ecco la tua torta !")
+  
+```
+Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di costruttore, del resto nessuna torta di prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. In quanto metodo esso è una funzione e si definisce con la seguente sintassi :
+```
+# CREO LA CLASSE DELLA TORTA
+classe torta () :
+
+  # INSERISCO IL METODO COSTRUTTORE
+  def __init__(self)
+
+  # PROPRIETÀ VARIE DELLA TORTA...
+```
+Il metodo costruttore `__init__` per poter funzionare necessità appieno necessità del parametro `self` al suo interno. Il parametro self serve a distingure le proprietà dell'oggetto da eventuali variabili di lavoro locale utilizzate al suo interno e che non devono essere considerate come proprietà dell'oggetto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
