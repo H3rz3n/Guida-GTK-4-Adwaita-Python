@@ -30,7 +30,7 @@ La definizione più semplice e corretta che possiamo dare di una funzione all'in
 
 #### Esempio di funzione senza passaggio di argomenti :
 ```python
-# DEFINIZIONE DI UNA FUNZIONE SENZA PASSAGGIO DI VARIABILI
+# DEFINIZIONE DI UNA FUNZIONE SENZA PASSAGGIO DI ARGOMENTI
 def funzione_1 () :
   a = 2
   b = 5
@@ -45,7 +45,7 @@ funzione_1()
 
 #### Esempio di funzione con passaggio di argomenti :
 ```python
-# DEFINIZIONE DI UNA FUNZIONE CON PASSAGGIO DI VARIABILI
+# DEFINIZIONE DI UNA FUNZIONE CON PASSAGGIO DI ARGOMENTI
 def funzione_2 (a, b) :
   c = (a + b)*2
   print("funzione due stampa ", c, "a seconda dei parametri 'a' e 'b' che gli passiamo quando la richiamiamo")
