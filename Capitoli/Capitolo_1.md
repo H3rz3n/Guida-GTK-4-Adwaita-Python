@@ -1,6 +1,7 @@
 ## Importare le librerie
 Per poter iniziare ad utilizzare GTK è necessario importare nel nostro file Python alcune librerie utilizzando il seguente codice :
-```
+
+```python 
 # IMPORTO I MODULI PRINCIPALI
 import sys, gi
 
@@ -28,7 +29,7 @@ Prima di procedere oltre è necessario chiarire i concetti di funzione, classe e
 La definizione più semplice e corretta che possiamo dare di una funzione all'interno di un linguaggio di programmazione è "insieme di istruzioni riutilizzabili". Difatti una funzione altro non è che un insieme di istruzioni che possiamo richiamare in un qualunque punto del nostro programma. Una funzione può essere sia utilizzata a priori senza passaggio di variabili dall'esterno, sia essere utilizzata acquisendo varibili esterne. Inoltre è possibile far uscire dei dati dal suo interno attraverso l'istruzione return. In ogni caso, tutte e funzioni vanno dichiarate prima dell'inzio del programma principale o "main". Vediamo tre esempi di funzioni le caratteristiche sopra elencate :
 
 #### Esempio di funzione senza passaggio di variabili :
-```
+```python
 # DEFINIZIONE DI UNA FUNZIONE SENZA PASSAGGIO DI VARIABILI
 def funzione_1 () :
   a = 2
@@ -43,7 +44,7 @@ funzione_1()
 ```
 
 #### Esempio di funzione con passaggio di variabili :
-```
+```python
 # DEFINIZIONE DI UNA FUNZIONE CON PASSAGGIO DI VARIABILI
 def funzione_2 (a, b) :
   c = (a + b)*2
@@ -61,7 +62,7 @@ funzione_2(a, b)
 
 Un altra cosa utile da ricordare è il funzionamento dell'istruzione "return" all'interno delle funzioni. Essa ci permette di portare fuori dalla funzione uno più valori, siano essi numeri, stringhe o booleani.
 #### Esempio di funzione con parametro return :
-```
+```python
 # DEFINIZIONE DI UNA FUNZIONE CHE UTILIZZA RETURN
 def funzione_3(b) :
   a = 3
