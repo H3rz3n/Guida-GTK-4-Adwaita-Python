@@ -53,7 +53,7 @@ def funzione_2 (a, b) :
 
 # DEFINISCO A E B A MIO PIACERE
 a = 4
-b = input("Inserisci numero B : ")
+b = int(input("Inserisci numero B : "))
 
 # RICHIAMO LA FUNZIONE PASSANDO LE VARIABILI
 funzione_2(a, b)
@@ -71,7 +71,7 @@ def funzione_3(b) :
 
 # INIZIO MAIN
 
-b = input("Inserisci il numero B : ")
+b = int(input("Inserisci il numero B : "))
 # COPIO LA VARIABILE C DELLA FUNZIONE NELLA VARIABILE D DEL PROGRAMMA
 d = funzione_3(b) 
 print("Il risultato è : ", d)
@@ -108,10 +108,10 @@ class torta () :
 Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di un costruttore, del resto nessuna torta si prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. Il metodo costruttore `__init__` per poter funzionare appieno necessita del parametro`self` al suo interno. Il parametro self serve a distingure le proprietà dell'oggetto da eventuali variabili locali di lavoro utilizzate all'interno della classe, le quali non devono essere considerate come proprietà dell'oggetto. Esso si chiama self poichè riferisce a se stesso, ossia al costruttore `__init___`, che le variabili che contengono self come apice sono delle proprietà di cui tenere conto quando il costruttore `__init__` andrà a generare il nostro oggetto. Vediamo meglio la sintassi ed il funzionamento di `__init__` e `self` con un esempio :
 ```
 # CREO LA CLASSE DELLA TORTA
-classe torta () :
+class torta () :
 
   # INSERISCO IL METODO COSTRUTTORE
-  def __init__(self)
+  def __init__ (self) :
 
     # PROPRIETÀ VARIE DELLA TORTA...
     self.grandezza = ""
@@ -125,7 +125,7 @@ Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempir
 
 
 
-- **Argomenti posizionali:** Quando utilizziamo gli argomenti posizionali comunichiamo alla funzione che le arriveranno un numero preciso di fonti di dati in un preciso ordine. Non vengono specificate le origini, ma gli argomenti passati devono coincedere in numero con quelli che la funzione si aspetta di ricevere. Vediamo un esempio :
+- **01 | Argomenti posizionali:** Quando utilizziamo gli argomenti posizionali comunichiamo alla funzione che le arriveranno un preciso numero di fonti di dati in un preciso ordine. Non vengono specificate le origini, ma gli argomenti passati alla funzione devono coincedere in numero con quelli che la funzione si aspetta di ricevere. Vediamo un esempio :
 ```
 # CREAZIONE DELLA FUNZIONE
 def funzione_1 (argomento_1, argomento_2, argomento_3) :
@@ -151,7 +151,7 @@ funzione_1 (argomento_b, argomento_c, argomento_a )
 
 
 
-- **Argomenti per parola chiave:** Quando utilizziamo gli argomenti per parola chiave comunichiamo alla funzione di aspettarsi un numero definito di argomenti ed anche il nome specifico dell'argomento che gli verrà passato. In questo caso gli argomenti possono essere passati alla funzione in un qualunque ordine poichè viene utilizzato come riferimento il nome dell'argomento. Vediamo un esempio :
+- **02 | Argomenti per parola chiave:** Quando utilizziamo gli argomenti per parola chiave comunichiamo alla funzione di aspettarsi un numero definito di argomenti ed anche il nome specifico dell'argomento che gli verrà passato. In questo caso gli argomenti possono essere passati alla funzione in un qualunque ordine poichè viene utilizzato come riferimento il nome dell'argomento. Vediamo un esempio :
 ```
 # CREAZIONE DELLA FUNZIONE
 def funzione_2 (argomento_1, argomento_2, argomento_3) :
@@ -175,7 +175,7 @@ funzione_2 (argomento_1 = argomento_a, argomento_3 = argomento_c, argomento_2 = 
 ```
 
 
-- **Argomenti di default:** Gli argomenti di default vengono utilizzati per fornire sempre alla funzione uno o più dati in modo garantito. È importante sottolineare che i dati all'interno dell'argomento che noi forniamo possono essere sovrascritti in qualunque momento. Ciò che è garantito è solo un dato di base, il quale è utile per evitare di ricevere errori dalla funzione in caso non si passino tutti gli argomenti promessi. È importante però tenere a mente che *gli argomenti di default devono essere sempre gli ultimi passati alla funzione*. Vediamo un esempio :
+- **03 | Argomenti di default:** Quando utilizziamo gli argomenti di default stiamo comunicando alla funzione che gli forniremo uno o più dati in modo garantito. È importante sottolineare che i dati all'interno dell'argomento che noi forniamo possono essere sovrascritti in qualunque momento. Ciò che è garantito è solo un dato di base, il quale è utile per evitare di ricevere errori dalla funzione in caso non si passino tutti gli argomenti promessi. È importante però tenere a mente che *gli argomenti di default devono essere sempre gli ultimi passati alla funzione*. Vediamo un esempio :
 ```
 # CREAZIONE DELLA FUNZIONE
 def funzione_3 (argomento_1, argomento_3, argomento_2 = "CIAO !") :
@@ -200,11 +200,30 @@ funzione_3 (argomento_a, argomento_c, argomento_b)
 
 
 
-- **Argomenti posizionali arbitrari:** Gli argomenti posizionali arbitrari hanno lo stesso funzionamento 
+- **04 | Argomenti posizionali arbitrari:** Quando utilizziamo gli argomenti posizionali arbitrari sitamo comunicando alla funzione che non sappiamo quanti argomenti gli passeremo, ma che essi saranno passati in un preciso ordine. Questi dati veranno tenuti in memoria all interno di un tuple dentro la funzione. Lo standard informale e comune vuole si che utilizzi il parametro `*args` per passare i vari parametri, ma sintattatticamente parlando possiamo utilizzare un qualunque nome purchè sia preceduto da un asterisco. Vediamo un esempio :
+```
+# CREAZIONE DELLA FUNZIONE
+def funzione_4 (*args) :
+  # CONTENUTO DELLA FUNZIONE
+  print("Ciao, questi sono i nomi : ", args)
+
+# MAIN
+
+argomento_a = "Lorenzo"
+argomento_b = "Camilla"
+argomento_c = "Gianmarco"
+
+# RICHIAMO LA FUNZIONE
+funzione_4 (argomento_a, argomento_c, argomento_b)
+
+# GLI ARGOMENTI VENGONO CARICATI NELLA FUNZIONE
+# CON LA SEGUENTE CORRISPONDENZA :
+# ARGS = ARGOMENTO_A ARGOMENTO_C ARGOMENTO_B
+```
 
 
 
-
+- **05 | Argomenti per parola chiave arbitrari:**
 
 
 
