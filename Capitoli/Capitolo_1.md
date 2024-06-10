@@ -72,9 +72,13 @@ def funzione_3(b) :
 
 # INIZIO MAIN
 
+# PRENDO IN INPUT B
 b = int(input("Inserisci il numero B : "))
+
 # COPIO LA VARIABILE C DELLA FUNZIONE NELLA VARIABILE D DEL PROGRAMMA
-d = funzione_3(b) 
+d = funzione_3(b)
+
+STAMPO LA VARIABILE D
 print("Il risultato è : ", d)
 ```
 
