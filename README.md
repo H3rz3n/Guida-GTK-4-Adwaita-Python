@@ -88,7 +88,8 @@ La classe è un concetto fondamentale della programmazione ad oggetti e può ess
 > - Lo stampo / contenitore e ricetta della torta : **la classe**
 > - L'insieme degli ingredienti della torta : **le proprietà / caratteristiche della classe**
 > - Le varie occasioni per preparare la torta : **I metodi della classe / funzioni dell'oggetto**
-La domanda che vi sorgerà spontanea è : "Dove e come rientra l'oggetto in questo insieme ?" L'oggetto altro non è che la torta. Noi possiamo avere avere una classe in grado di fornire diversi gusti di torte. Approfondiamo meglio la questione con esempio semplificato :
+
+La domanda che vi sorgerà spontanea è : "Dove e come rientra l'oggetto in questo insieme ?" **L'oggetto non è altro che la torta**. Noi possiamo avere avere una classe in grado di fornire diversi gusti di torte. Approfondiamo meglio la questione con esempio semplificato :
 
 ```
 # CREO LA CLASSE DELLA TORTA
@@ -106,7 +107,7 @@ class torta () :
     print("Complimenti per il tuo successo ! Ecco la tua torta !")
   
 ```
-Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di costruttore, del resto nessuna torta di prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. In quanto metodo esso è una funzione e si definisce con la seguente sintassi :
+Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di un costruttore, del resto nessuna torta di prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. Il metodo costruttore `__init__` per poter funzionare appieno necessita del parametro`self` al suo interno. Il parametro self serve a distingure le proprietà dell'oggetto da eventuali variabili locali di lavoro utilizzate all'interno della classe, le quali non devono essere considerate come proprietà dell'oggetto. Esso si chiama self poichè riferisce a se stesso, ossia al costruttore `__init___`, che le variabili che contengono self come apice sono delle proprietà di cui tenere conto quando il costruttore `__init__` andrà a generare il nostro oggetto. Vediamo meglio la sintassi ed il funzionamento di `__init__` e `self` con un esempio :
 ```
 # CREO LA CLASSE DELLA TORTA
 classe torta () :
@@ -114,9 +115,16 @@ classe torta () :
   # INSERISCO IL METODO COSTRUTTORE
   def __init__(self)
 
-  # PROPRIETÀ VARIE DELLA TORTA...
+    # PROPRIETÀ VARIE DELLA TORTA...
+    self.grandezza = ""
+    self.gusto = ""
+  
+    # VARIABILI DI LAVORO
+    casa = ""
+    barbabietola = ""
 ```
-Il metodo costruttore `__init__` per poter funzionare necessità appieno necessità del parametro `self` al suo interno. Il parametro self serve a distingure le proprietà dell'oggetto da eventuali variabili di lavoro locale utilizzate al suo interno e che non devono essere considerate come proprietà dell'oggetto.
+Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe. Per fare ciò ci sono diversi metodi, ognuno con le sue caratteristiche peculiari a seconda dei casi d'uso. 
+
 
 
 
