@@ -226,7 +226,7 @@ funzione_5 (Nome = argomento_nome, Cognome = argomento_cognome, Eta = argomento_
 # CREAZIONE DELLA FUNZIONE
 def funzione_2 (*, argomento_1, argomento_2, argomento_3) :
 
-	# CONTENUTO DELLA FUNZIONE
+  # CONTENUTO DELLA FUNZIONE
   print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
