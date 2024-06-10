@@ -26,8 +26,7 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
 
 > [!IMPORTANT]
 > #### La guida è attualmente in allestimento,
-> presto saranno aggiunti altri contenuti.
-> Grazie per la pazienza :)
+> Presto saranno aggiunti altri contenuti. Grazie per la pazienza :)
 
 
     
