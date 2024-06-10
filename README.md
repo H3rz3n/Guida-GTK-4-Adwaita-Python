@@ -25,7 +25,7 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
   - Approfondimento della creazione e dei parametri delle finestre
 
 > [!IMPORTANT]
-> #### La guida è attualmente in allestimento,
+> #### La guida è attualmente in allestimento.
 > Presto saranno aggiunti altri contenuti. Grazie per la pazienza :)
 
 
