@@ -3,7 +3,7 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
 
 ## Indice dei contenuti
 - [**CAPITOLO 1**](Capitoli/Capitolo_1.md)
-  - Importare le librerie
+  - Importare le librerie necessarie
   - Concetto di classe, oggetto e funzione in Python
   - Creazione di una finestra di prova
     
