@@ -26,9 +26,9 @@ Nonostante per la prima parte della guida siano necessari solo ```Gtk``` ed ```A
 Prima di procedere oltre è necessario chiarire i concetti di funzione, classe e oggetto all'interno di Pyhton, in modo da poter comprendere meglio le strtture e la sintassi che andremo ad utilizzare successivamente.
 
 ### Concetto di funzione
-La definizione più semplice e corretta che possiamo dare di una funzione all'interno di un linguaggio di programmazione è "insieme di istruzioni riutilizzabili". Difatti una funzione altro non è che un insieme di istruzioni che possiamo richiamare in un qualunque punto del nostro programma. Una funzione può essere sia utilizzata a priori senza passaggio di variabili dall'esterno, sia essere utilizzata acquisendo varibili esterne. Inoltre è possibile far uscire dei dati dal suo interno attraverso l'istruzione return. In ogni caso, tutte e funzioni vanno dichiarate prima dell'inzio del programma principale o "main". Vediamo tre esempi di funzioni le caratteristiche sopra elencate :
+La definizione più semplice e corretta che possiamo dare di una funzione all'interno di un linguaggio di programmazione è "insieme di istruzioni riutilizzabili". Difatti una funzione altro non è che un insieme di istruzioni che possiamo richiamare in un qualunque punto del nostro programma. Una funzione può essere sia utilizzata a priori senza passaggio di argomenti (variabili o costanti) dall'esterno, sia essere utilizzata acquisendo argomenti esterni. Inoltre è possibile far uscire dei dati dal suo interno attraverso l'istruzione return. In ogni caso, tutte e funzioni vanno dichiarate prima dell'inzio del programma principale o "main". Vediamo tre esempi di funzioni con le caratteristiche sopra elencate :
 
-#### Esempio di funzione senza passaggio di variabili :
+#### Esempio di funzione senza passaggio di argomenti :
 ```python
 # DEFINIZIONE DI UNA FUNZIONE SENZA PASSAGGIO DI VARIABILI
 def funzione_1 () :
@@ -43,7 +43,7 @@ def funzione_1 () :
 funzione_1()
 ```
 
-#### Esempio di funzione con passaggio di variabili :
+#### Esempio di funzione con passaggio di argomenti :
 ```python
 # DEFINIZIONE DI UNA FUNZIONE CON PASSAGGIO DI VARIABILI
 def funzione_2 (a, b) :
@@ -60,7 +60,6 @@ b = int(input("Inserisci numero B : "))
 funzione_2(a, b)
 ```
 
-Un altra cosa utile da ricordare è il funzionamento dell'istruzione "return" all'interno delle funzioni. Essa ci permette di portare fuori dalla funzione uno più valori, siano essi numeri, stringhe o booleani.
 #### Esempio di funzione con parametro return :
 ```python
 # DEFINIZIONE DI UNA FUNZIONE CHE UTILIZZA RETURN
@@ -78,10 +77,9 @@ b = int(input("Inserisci il numero B : "))
 d = funzione_3(b) 
 print("Il risultato è : ", d)
 ```
+
 #### Introduzione e spiegazione delle tipologie di argomenti nelle funzioni :
-Ci sono diversi tipi di argomenti che possiamo usare a seconda delle nostre esigenze ed le varie tipologie possono anche essere utilizzate contemporaneamente. Vediamo la lista completa con alcuni esempi :
-
-
+È importante sapere che vi sono diversi tipi di argomenti che possiamo passare alle funzioni ed ognuno ha caratteristiche specifiche a seconda delle per rispondere a varie esigenze. Spesso le varie tipologie possono anche essere utilizzate contemporaneamente, seppur richiedendo il giusto ordinamento. Analizziamo la lista completa e spieghiamole con alcuni esempi :
 
 - **01 | Argomenti posizionali:** Quando utilizziamo gli argomenti posizionali comunichiamo alla funzione che le arriveranno un preciso numero di fonti di dati in un preciso ordine. Non vengono specificate le origini, ma gli argomenti passati alla funzione devono coincedere in numero con quelli che la funzione si aspetta di ricevere. Vediamo un esempio :
 ```python
