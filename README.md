@@ -123,7 +123,8 @@ classe torta () :
     casa = ""
     barbabietola = ""
 ```
-Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe. Per fare ciò ci sono diversi metodi, ognuno con le sue caratteristiche peculiari a seconda dei casi d'uso. 
+Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe. Per fare ciò dobbiamo passare al costruttore altri argomenti oltre a `self` e ci sono diversi modi per farlo a seconda delle nostre esigenze :
+- **Passare degli argomenti ben definiti nel numero, nome ed ordine : ** `def funzione (argomento_1, argomento_2, argomento_3) : `
 
 
 
