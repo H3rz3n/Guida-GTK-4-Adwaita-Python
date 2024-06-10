@@ -22,6 +22,7 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
 - **CAPITOLO 4**
   - Approfondimento della creazione e dei parametri delle finestre
   - Introduzione ed utilizzo della griglia per i layout
+  - ...
 
 
 > [!IMPORTANT]
