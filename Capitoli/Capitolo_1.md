@@ -92,7 +92,7 @@ La classe è un concetto fondamentale della programmazione ad oggetti e può ess
 
 La domanda che vi sorgerà spontanea è : "Dove e come rientra l'oggetto in questo insieme ?" **L'oggetto non è altro che la torta**. Approfondiamo meglio la questione con esempio semplificato :
 
-```
+```python
 # CREO LA CLASSE DELLA TORTA
 class torta () :
 
@@ -110,7 +110,7 @@ class torta () :
 ```
 #### Introduzione e spiegazione del costruttore __init__
 Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di un costruttore, del resto nessuna torta si prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. Il metodo costruttore `__init__` per poter funzionare appieno necessita del parametro`self` al suo interno. Il parametro `self` serve a distingure le proprietà dell'oggetto da eventuali variabili locali di lavoro utilizzate all'interno della classe, le quali non devono essere considerate come proprietà dell'oggetto. Esso si chiama self poichè riferisce a se stesso, ossia al costruttore `__init___`, che le variabili che contengono self come apice sono delle proprietà di cui tenere conto quando il costruttore `__init__` andrà a generare il nostro oggetto. Vediamo meglio la sintassi ed il funzionamento di `__init__` e `self` con un esempio :
-```
+```python
 # CREO LA CLASSE DELLA TORTA
 class torta () :
 
@@ -136,7 +136,7 @@ Ci sono diversi tipi di argomenti che possiamo usare a seconda delle nostre esig
 
 
 - **01 | Argomenti posizionali:** Quando utilizziamo gli argomenti posizionali comunichiamo alla funzione che le arriveranno un preciso numero di fonti di dati in un preciso ordine. Non vengono specificate le origini, ma gli argomenti passati alla funzione devono coincedere in numero con quelli che la funzione si aspetta di ricevere. Vediamo un esempio :
-```
+```python
 # CREAZIONE DELLA FUNZIONE
 def funzione_1 (argomento_1, argomento_2, argomento_3) :
   # CONTENUTO DELLA FUNZIONE
@@ -162,7 +162,7 @@ funzione_1 (argomento_b, argomento_c, argomento_a )
 
 
 - **02 | Argomenti per parola chiave:** Quando utilizziamo gli argomenti per parola chiave comunichiamo alla funzione di aspettarsi un numero definito di argomenti ed anche il nome/tipologia specifica dell'argomento che gli verrà passato. In questo caso gli argomenti possono essere passati alla funzione in un qualunque ordine poichè viene utilizzato come riferimento il nome dell'argomento. Vediamo un esempio :
-```
+```python
 # CREAZIONE DELLA FUNZIONE
 def funzione_2 (argomento_1, argomento_2, argomento_3) :
 	# CONTENUTO DELLA FUNZIONE
@@ -186,7 +186,7 @@ funzione_2 (argomento_1 = argomento_nome, argomento_2 = argomento_cognome, argom
 
 
 - **03 | Argomenti di default:** Quando utilizziamo gli argomenti di default stiamo comunicando alla funzione che gli forniremo uno o più dati in modo garantito. È importante sottolineare che i dati all'interno dell'argomento che noi forniamo possono essere sovrascritti in qualunque momento. Ciò che è garantito è solo un dato di base, il quale è utile per evitare di ricevere errori dalla funzione in caso non si passino tutti gli argomenti promessi. È importante però tenere a mente che *gli argomenti di default devono essere sempre gli ultimi passati alla funzione*. Vediamo un esempio :
-```
+```python
 # CREAZIONE DELLA FUNZIONE
 def funzione_3 (argomento_1, argomento_3, argomento_2 = "CIAO !") :
   # CONTENUTO DELLA FUNZIONE
@@ -211,7 +211,7 @@ funzione_3 (argomento_a, argomento_c, argomento_b)
 
 
 - **04 | Argomenti posizionali arbitrari:** Quando utilizziamo gli argomenti posizionali arbitrari sitamo comunicando alla funzione che non sappiamo quanti argomenti gli passeremo, ma che essi saranno passati in un preciso ordine. Questi dati veranno tenuti in memoria  dentro la funzione all interno di un tuple. Ciò implica che gli argomenti verranno archiviati all'interno della funzione in ordine di presentazione in un unica sezione. Lo standard informale e comune vuole si che utilizzi il parametro `*args` per passare i vari parametri, ma sintattatticamente parlando possiamo utilizzare un qualunque nome purchè sia preceduto da un asterisco. Vediamo un esempio :
-```
+```python
 # CREAZIONE DELLA FUNZIONE
 def funzione_4 (*args) :
 
@@ -240,7 +240,7 @@ funzione_4 (argomento_a, argomento_c, argomento_b)
 
 
 - **05 | Argomenti per parola chiave arbitrari:** Quando utilizziamo gli argomenti per parola chiave arbitrari stiamo comunicando alla funzione che non sappiamo quanti argomenti gli passeremo, ma sappiamo il nome/tipologia di questi. Questi dati veranno tenuti in memoria dentro la funzione all interno di un dizionario. Ciò implica che gli argomenti verranno acquisiti e gestiti all'interno della funzione sequendo uno una schema chiave-valore, cioè in due sezioni. Lo standard informale e comune vuole si che utilizzi il parametro `*kwargs` per passare i vari parametri, ma sintattatticamente parlando possiamo utilizzare un qualunque nome purchè sia preceduto da due asterischi. Vediamo un esempio :
-```
+```python
 # CREAZIONE DELLA FUNZIONE
 def funzione_5 (**kwargs) :
 
@@ -270,7 +270,7 @@ funzione_5 (Nome = argomento_nome, Cognome = argomento_cognome, Eta = argomento_
 
 
 - **06 | Argomenti *solo* per parola chiave:** Quando utilizziamo questa opzione la funzione accetterà solo argomenti per parola chiave. Per poter ottenere questa funzionalità è necessario dichiarare come primo argomento ad inizio funzione un asterisco. Vediamolo con un esempio :
-```
+```python
 # CREAZIONE DELLA FUNZIONE
 def funzione_2 (*, argomento_1, argomento_2, argomento_3) :
 	# CONTENUTO DELLA FUNZIONE
