@@ -47,7 +47,7 @@ Esempio di funzione con passaggio di variabili :
 # DEFINIZIONE DI UNA FUNZIONE CON PASSAGGIO DI VARIABILI
 def funzione_2 (a, b) :
   c = (a + b)*2
-  print("funzione due stampa ", c, "a seconda dei parametri "a" e "b" che gli passiamo quando la richiamiamo")
+  print("funzione due stampa ", c, "a seconda dei parametri 'a' e 'b' che gli passiamo quando la richiamiamo")
 
 # INIZIO MAIN
 
