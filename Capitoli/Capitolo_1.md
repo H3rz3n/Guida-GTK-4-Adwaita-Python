@@ -78,58 +78,6 @@ b = int(input("Inserisci il numero B : "))
 d = funzione_3(b) 
 print("Il risultato è : ", d)
 ```
-
-
-
-### Concetto di classe ed oggetto
-#### Introduzione e spiegazione del concetto di classe ed oggetto :
-La classe è un concetto fondamentale della programmazione ad oggetti e può essere definita come il modello o progetto di un oggetto. Un buon esempio per comprendere il legame ed il funzionamento di classi ed oggetti è il seguente :
-> Immaginiamo la classe come un kit molto completo per preparare le torte. In questo kit sono presenti lo stampo per la torta che funge da contenitore e da ricetta per la stessa (la classe), gli ingredienti (le proprietà / caratteristiche dell'oggetto) e le varie occasioni per cui  preparare la torta (i metodi della classe / funzioni dell'oggetto).
-> Di conseguenza otteniamo :
-> - Lo stampo / contenitore e ricetta della torta : **la classe**
-> - L'insieme degli ingredienti della torta : **le proprietà / caratteristiche della classe**
-> - Le varie occasioni per preparare la torta : **I metodi della classe / funzioni dell'oggetto**
-
-La domanda che vi sorgerà spontanea è : "Dove e come rientra l'oggetto in questo insieme ?" **L'oggetto non è altro che la torta**. Approfondiamo meglio la questione con esempio semplificato :
-
-```python
-# CREO LA CLASSE DELLA TORTA
-class torta () :
-
-  # DEFINISCO LE PROPRIETÀ / CARATTERISTICHE DELLA TORTA
-  grandezza = ""
-  gusto = ""
-
-  # DEFINISCO ALCUNE OCCASIONI PER CUI VIENE REALIZZATA
-  def compleanno () :
-    print("Tanti auguri ! Ecco la tua torta !")
-
-  def successo_lavorativo () :
-    print("Complimenti per il tuo successo ! Ecco la tua torta !")
-  
-```
-#### Introduzione e spiegazione del costruttore __init__
-Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di un costruttore, del resto nessuna torta si prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. Il metodo costruttore `__init__` per poter funzionare appieno necessita del parametro`self` al suo interno. Il parametro `self` serve a distingure le proprietà dell'oggetto da eventuali variabili locali di lavoro utilizzate all'interno della classe, le quali non devono essere considerate come proprietà dell'oggetto. Esso si chiama self poichè riferisce a se stesso, ossia al costruttore `__init___`, che le variabili che contengono self come apice sono delle proprietà di cui tenere conto quando il costruttore `__init__` andrà a generare il nostro oggetto. Vediamo meglio la sintassi ed il funzionamento di `__init__` e `self` con un esempio :
-```python
-# CREO LA CLASSE DELLA TORTA
-class torta () :
-
-  # INSERISCO IL METODO COSTRUTTORE
-  def __init__ (self) :
-
-    # PROPRIETÀ VARIE DELLA TORTA...
-    self.grandezza = ""
-    self.gusto = ""
-  
-    # VARIABILI DI LAVORO
-		casa = ""
-		barbabietola = ""
-```
-#### Introduzione e spiegazione dell'argomento self
-Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe passando al costruttore altri argomenti oltre a `self`. 
-
-
-
 #### Introduzione e spiegazione delle tipologie di argomenti nelle funzioni :
 Ci sono diversi tipi di argomenti che possiamo usare a seconda delle nostre esigenze ed le varie tipologie possono anche essere utilizzate contemporaneamente. Vediamo la lista completa con alcuni esempi :
 
@@ -291,6 +239,72 @@ funzione_2 (argomento_1 = argomento_nome, argomento_2 = argomento_cognome, argom
 # ARGOMENTO_2 = ARGOMENTO_COGNOME
 # ARGOMENTO_3 = ARGOMENTO_ETA
 ```
+
+
+### Concetto di classe ed oggetto
+#### Introduzione e spiegazione del concetto di classe ed oggetto :
+La classe è un concetto fondamentale della programmazione ad oggetti e può essere definita come il modello o progetto di un oggetto. Un buon esempio per comprendere il legame ed il funzionamento di classi ed oggetti è il seguente :
+> Immaginiamo la classe come un kit molto completo per preparare le torte. In questo kit sono presenti lo stampo per la torta che funge da contenitore e da ricetta per la stessa (la classe), gli ingredienti (le proprietà / caratteristiche dell'oggetto) e le varie occasioni per cui  preparare la torta (i metodi della classe / funzioni dell'oggetto).
+> Di conseguenza otteniamo :
+> - Lo stampo / contenitore e ricetta della torta : **la classe**
+> - L'insieme degli ingredienti della torta : **le proprietà / caratteristiche della classe**
+> - Le varie occasioni per preparare la torta : **I metodi della classe / funzioni dell'oggetto**
+
+La domanda che vi sorgerà spontanea è : "Dove e come rientra l'oggetto in questo insieme ?" **L'oggetto non è altro che la torta**. Approfondiamo meglio la questione con esempio semplificato :
+
+```python
+# CREO LA CLASSE DELLA TORTA
+class torta () :
+
+  # DEFINISCO LE PROPRIETÀ / CARATTERISTICHE DELLA TORTA
+  grandezza = ""
+  gusto = ""
+
+  # DEFINISCO ALCUNE OCCASIONI PER CUI VIENE REALIZZATA
+  def compleanno () :
+    print("Tanti auguri ! Ecco la tua torta !")
+
+  def successo_lavorativo () :
+    print("Complimenti per il tuo successo ! Ecco la tua torta !")
+  
+```
+#### Introduzione e spiegazione del costruttore __init__
+Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di un costruttore, del resto nessuna torta si prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. Il metodo costruttore `__init__` per poter funzionare appieno necessita del parametro`self` al suo interno. Il parametro `self` serve a distingure le proprietà dell'oggetto da eventuali variabili locali di lavoro utilizzate all'interno della classe, le quali non devono essere considerate come proprietà dell'oggetto. Esso si chiama self poichè riferisce a se stesso, ossia al costruttore `__init___`, che le variabili che contengono self come apice sono delle proprietà di cui tenere conto quando il costruttore `__init__` andrà a generare il nostro oggetto. Vediamo meglio la sintassi ed il funzionamento di `__init__` e `self` con un esempio :
+```python
+# CREO LA CLASSE DELLA TORTA
+class torta () :
+
+  # INSERISCO IL METODO COSTRUTTORE
+  def __init__ (self) :
+
+    # PROPRIETÀ VARIE DELLA TORTA...
+    self.grandezza = ""
+    self.gusto = ""
+  
+    # VARIABILI DI LAVORO
+		casa = ""
+		barbabietola = ""
+```
+#### Introduzione e spiegazione dell'argomento self
+Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe passando al costruttore altri argomenti oltre a `self`. 
+
+
+
+
+
+#### Introduzione e spiegazione dell'ereditarietà delle classi
+
+
+
+
+
+
+
+
+
+
+
+#### Introduzione e spiegazione della funzione Super()
 
 
 
