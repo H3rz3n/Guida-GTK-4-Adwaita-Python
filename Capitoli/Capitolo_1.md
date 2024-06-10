@@ -78,7 +78,7 @@ b = int(input("Inserisci il numero B : "))
 # COPIO LA VARIABILE C DELLA FUNZIONE NELLA VARIABILE D DEL PROGRAMMA
 d = funzione_3(b)
 
-STAMPO LA VARIABILE D
+# STAMPO LA VARIABILE D
 print("Il risultato è : ", d)
 ```
 
