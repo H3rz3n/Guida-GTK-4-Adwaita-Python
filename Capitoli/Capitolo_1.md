@@ -1,12 +1,15 @@
 ## Importare le librerie
 Per poter iniziare ad utilizzare GTK è necessario importare nel nostro file Python alcune librerie utilizzando il seguente codice :
 ```
-  import sys, gi
-  
-  gi.require_version('Gtk', '4.0')
-  gi.require_version('Adw', '1')
-  
-  from gi.repository import Gtk, Adw, Gdk, Pango, Gio, GLib
+# IMPORTO I MODULI PRINCIPALI
+import sys, gi
+
+# SPECIFO LE VERSIONI DI GTK ED ADW CHE ANDREMO AD UTILIZZARE  
+gi.require_version('Gtk', '4.0')
+gi.require_version('Adw', '1')
+
+# IMPORTO I MODULI SECONDARI DELLA RACCOLTA GI
+from gi.repository import Gtk, Adw, Gdk, Pango, Gio, GLib
 ```
 #### Spiegazione del codice : 
 Attraverso questo comando abbiamo importato i moduli ```sys``` e ```gi```, successivamente abbiamo chiesto a quest'ultimo di importare i successivi moduli utilizzando le versioni di ```GTK``` e ```Adwaita``` nelle versione a noi necessarie. 
