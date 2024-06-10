@@ -118,8 +118,62 @@ classe torta () :
     casa = ""
     barbabietola = ""
 ```
-Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe. Per fare ciò dobbiamo passare al costruttore altri argomenti oltre a `self` e ci sono diversi modi per farlo a seconda delle nostre esigenze :
-- **Passare degli argomenti ben definiti nel numero, nome ed ordine : ** `def funzione (argomento_1, argomento_2, argomento_3) : `
+Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe. Per fare ciò dobbiamo passare al costruttore altri argomenti oltre a `self` e ci sono tipi di argomenti che possiamo usare a seconda delle nostre esigenze :
+
+
+
+- **Argomenti posizionali:** Utilizzando gli argomenti posizionali semplicemente si dice alla funzione che le arriveranno tre fondi di dati in un preciso ordine. Non vengono specificate le origini e viene a priori definito il numero di argomenti che verranno passati, i quali devono coincedere con quelli che la funzione si aspetta. Vediamo un esempio :
+```
+def funzione_1 (argomento_1, argomento_2, argomento_3) :
+  # CONTENUTO DELLA FUNZIONE
+
+#MAIN
+
+argomento_a = 3
+argomento_b = "ciao"
+argomento_c = "True"
+
+#RICHIAMO LA FUNZIONE
+funzione_1 (argomento_b, argomento_c, argomento_a ) # ARGOMENTO_B = ARGOMENTO_1; ARGOMENTO_C = ARGOMENTO_2; ARGOMENTO_A = ARGOMENTO_3
+
+```
+
+
+
+- **Argomenti per parola chiave:** Utilizzando di argomenti per parola chiave comunichiamo alla funzione di aspettarsi un numero definito di argomenti ed anche il nome specifico dell'argomento che gli verrà passato. In questo caso gli argomenti possono essere passati alla funzione in un qualunque ordine poichè viene utilizzato come riferimento il nome dell'argomento. Vediamo un esempio :
+```
+ciao
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
