@@ -17,7 +17,7 @@ Infine abbiamo importato i moduli :
 ```
 Gtk, Adw, Gdk, Pango, Gio, GLib
 ```
-Nonostante per la prima parte siano necessari sono ```Gtk``` ed ```Adw```, penso sia meglio importare sin da subito tutto ciò che possa esserci utile nello sviluppare i nostri primi programmi.
+Nonostante per la prima parte della guida siano necessari solo ```Gtk``` ed ```Adw```, penso sia meglio importare sin da subito tutto ciò che possa esserci utile nello sviluppare i nostri primi programmi.
 
 
 
