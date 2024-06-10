@@ -27,7 +27,7 @@ Prima di procedere oltre è necessario chiarire i concetti di funzione, classe e
 ### Concetto di funzione
 La definizione più semplice e corretta che possiamo dare di una funzione all'interno di un linguaggio di programmazione è "insieme di istruzioni riutilizzabili". Difatti una funzione altro non è che un insieme di istruzioni che possiamo richiamare in un qualunque punto del nostro programma. Una funzione può essere sia utilizzata a priori senza passaggio di variabili dall'esterno, sia essere utilizzata acquisendo varibili esterne. Inoltre è possibile far uscire dei dati dal suo interno attraverso l'istruzione return. In ogni caso, tutte e funzioni vanno dichiarate prima dell'inzio del programma principale o "main". Vediamo tre esempi di funzioni le caratteristiche sopra elencate :
 
-Esempio di funzione senza passaggio di variabili :
+#### Esempio di funzione senza passaggio di variabili :
 ```
 # DEFINIZIONE DI UNA FUNZIONE SENZA PASSAGGIO DI VARIABILI
 def funzione_1 () :
@@ -42,7 +42,7 @@ def funzione_1 () :
 funzione_1()
 ```
 
-Esempio di funzione con passaggio di variabili :
+#### Esempio di funzione con passaggio di variabili :
 ```
 # DEFINIZIONE DI UNA FUNZIONE CON PASSAGGIO DI VARIABILI
 def funzione_2 (a, b) :
@@ -59,7 +59,8 @@ b = int(input("Inserisci numero B : "))
 funzione_2(a, b)
 ```
 
-Un altra cosa utile da ricordare è il funzionamento dell'istruzione "return" all'interno delle funzioni. Essa ci permette di portare fuori dalla funzione uno più valori, siano essi numeri, stringhe o booleani. Vediamo un esempio dell'uso di return :
+Un altra cosa utile da ricordare è il funzionamento dell'istruzione "return" all'interno delle funzioni. Essa ci permette di portare fuori dalla funzione uno più valori, siano essi numeri, stringhe o booleani.
+#### Esempio di funzione con parametro return :
 ```
 # DEFINIZIONE DI UNA FUNZIONE CHE UTILIZZA RETURN
 def funzione_3(b) :
@@ -80,6 +81,7 @@ print("Il risultato è : ", d)
 
 
 ### Concetto di classe ed oggetto
+#### Introduzione e spiegazione del concetto di classe ed oggetto :
 La classe è un concetto fondamentale della programmazione ad oggetti e può essere definita come il modello o progetto di un oggetto. Un buon esempio per comprendere il legame ed il funzionamento di classi ed oggetti è il seguente :
 > Immaginiamo la classe come un kit molto completo per preparare le torte. In questo kit sono presenti lo stampo per la torta che funge da contenitore e da ricetta per la stessa (la classe), gli ingredienti (le proprietà / caratteristiche dell'oggetto) e le varie occasioni per cui  preparare la torta (i metodi della classe / funzioni dell'oggetto).
 > Di conseguenza otteniamo :
@@ -105,6 +107,7 @@ class torta () :
     print("Complimenti per il tuo successo ! Ecco la tua torta !")
   
 ```
+#### Introduzione e spiegazione del costruttore __init__
 Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di un costruttore, del resto nessuna torta si prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. Il metodo costruttore `__init__` per poter funzionare appieno necessita del parametro`self` al suo interno. Il parametro `self` serve a distingure le proprietà dell'oggetto da eventuali variabili locali di lavoro utilizzate all'interno della classe, le quali non devono essere considerate come proprietà dell'oggetto. Esso si chiama self poichè riferisce a se stesso, ossia al costruttore `__init___`, che le variabili che contengono self come apice sono delle proprietà di cui tenere conto quando il costruttore `__init__` andrà a generare il nostro oggetto. Vediamo meglio la sintassi ed il funzionamento di `__init__` e `self` con un esempio :
 ```
 # CREO LA CLASSE DELLA TORTA
@@ -121,7 +124,13 @@ class torta () :
 		casa = ""
 		barbabietola = ""
 ```
-Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe passando al costruttore altri argomenti oltre a `self`. Ci sono diversi tipi di argomenti che possiamo usare a seconda delle nostre esigenze ed le varie tipologie possono anche essere utilizzate contemporaneamente. Vediamo la lista completa con alcuni esempi :
+#### Introduzione e spiegazione dell'argomento self
+Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe passando al costruttore altri argomenti oltre a `self`. 
+
+
+
+#### Introduzione e spiegazione delle tipologie di argomenti nelle funzioni :
+Ci sono diversi tipi di argomenti che possiamo usare a seconda delle nostre esigenze ed le varie tipologie possono anche essere utilizzate contemporaneamente. Vediamo la lista completa con alcuni esempi :
 
 
 
