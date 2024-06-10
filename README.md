@@ -2,7 +2,7 @@
 Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adwaita con il linguaggio Python. Attraverso brevi spiegazioni ed esempi scopriremo le fondamenta della programmazione ad oggetti attraverso l'uso di GTK 4 ed Adwaita fino ad arrivare alla creazione di programmi per GNU-Linux perfettamente integrati in GNOME.
 
 ## Indice dei contenuti
-- **CAPITOLO 1**
+- [**CAPITOLO 1**](Capitoli/Capitolo_1.md)
   - Importare le librerie
   - Concetto di classe, oggetto e funzione in Python
   - Creazione di una finestra di prova
@@ -24,7 +24,10 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
   - Introduzione ed utilizzo
   - Approfondimento della creazione e dei parametri delle finestre
 
-## La guida è attualmente in allestimento, presto saranno aggiunti altri contenuti. Grazie per la pazienza :)
+> [!IMPORTANT]
+> ## La guida è attualmente in allestimento, presto saranno aggiunti altri contenuti. Grazie per la pazienza :)
+
+
     
 
 
