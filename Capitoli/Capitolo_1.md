@@ -12,7 +12,7 @@ gi.require_version('Adw', '1')
 from gi.repository import Gtk, Adw, Gdk, Pango, Gio, GLib
 ```
 #### Spiegazione del codice : 
-Attraverso questo comando abbiamo importato i moduli ```sys``` e ```gi```, successivamente abbiamo chiesto a quest'ultimo di importare i successivi moduli utilizzando le versioni di ```GTK``` e ```Adwaita``` nelle versione a noi necessarie. 
+Attraverso questo comando abbiamo importato i moduli ```sys``` e ```gi```, successivamente abbiamo specificato quest'ultimo quali versioni vogliamo utilizzare di ```GTK``` e ```Adwaita```. 
 Infine abbiamo importato i moduli :
 ```
 Gtk, Adw, Gdk, Pango, Gio, GLib
