@@ -56,7 +56,7 @@ def funzione_2 (a, b) :
 a = 4
 b = int(input("Inserisci numero B : "))
 
-# RICHIAMO LA FUNZIONE PASSANDO LE VARIABILI
+# RICHIAMO LA FUNZIONE PASSANDO GLI ARGOMENTI
 funzione_2(a, b)
 ```
 
