@@ -121,32 +121,87 @@ classe torta () :
     casa = ""
     barbabietola = ""
 ```
-Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe. Per fare ciò dobbiamo passare al costruttore altri argomenti oltre a `self` e ci sono tipi di argomenti che possiamo usare a seconda delle nostre esigenze :
+Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe passando al costruttore altri argomenti oltre a `self`. Ci sono diversi tipi di argomenti che possiamo usare a seconda delle nostre esigenze ed le varie tipologie possono anche essere utilizzate contemporaneamente. Vediamo la lista completa con alcuni esempi :
 
 
 
-- **Argomenti posizionali:** Utilizzando gli argomenti posizionali semplicemente si dice alla funzione che le arriveranno tre fondi di dati in un preciso ordine. Non vengono specificate le origini e viene a priori definito il numero di argomenti che verranno passati, i quali devono coincedere con quelli che la funzione si aspetta. Vediamo un esempio :
+- **Argomenti posizionali:** Quando utilizziamo gli argomenti posizionali comunichiamo alla funzione che le arriveranno un numero preciso di fonti di dati in un preciso ordine. Non vengono specificate le origini, ma gli argomenti passati devono coincedere in numero con quelli che la funzione si aspetta di ricevere. Vediamo un esempio :
 ```
+# CREAZIONE DELLA FUNZIONE
 def funzione_1 (argomento_1, argomento_2, argomento_3) :
   # CONTENUTO DELLA FUNZIONE
+  print(argomento_1, argomento_2, argomento_3)
 
-#MAIN
+# MAIN
 
-argomento_a = 3
+argomento_a = "3"
 argomento_b = "ciao"
 argomento_c = "True"
 
-#RICHIAMO LA FUNZIONE
-funzione_1 (argomento_b, argomento_c, argomento_a ) # ARGOMENTO_B = ARGOMENTO_1; ARGOMENTO_C = ARGOMENTO_2; ARGOMENTO_A = ARGOMENTO_3
+# RICHIAMO LA FUNZIONE
+funzione_1 (argomento_b, argomento_c, argomento_a )
+
+# GLI ARGOMENTI VENGONO CARICATI NELLA FUNZIONE
+# CON LA SEGUENTE CORRISPONDENZA :
+# ARGOMENTO_B = ARGOMENTO_1
+# ARGOMENTO_C = ARGOMENTO_2
+# ARGOMENTO_A = ARGOMENTO_3
 
 ```
 
 
 
-- **Argomenti per parola chiave:** Utilizzando di argomenti per parola chiave comunichiamo alla funzione di aspettarsi un numero definito di argomenti ed anche il nome specifico dell'argomento che gli verrà passato. In questo caso gli argomenti possono essere passati alla funzione in un qualunque ordine poichè viene utilizzato come riferimento il nome dell'argomento. Vediamo un esempio :
+- **Argomenti per parola chiave:** Quando utilizziamo gli argomenti per parola chiave comunichiamo alla funzione di aspettarsi un numero definito di argomenti ed anche il nome specifico dell'argomento che gli verrà passato. In questo caso gli argomenti possono essere passati alla funzione in un qualunque ordine poichè viene utilizzato come riferimento il nome dell'argomento. Vediamo un esempio :
 ```
-ciao
+# CREAZIONE DELLA FUNZIONE
+def funzione_2 (argomento_1, argomento_2, argomento_3) :
+  # CONTENUTO DELLA FUNZIONE
+  print(argomento_1, argomento_2, argomento_3)
+
+# MAIN
+
+argomento_a = "3"
+argomento_b = "ciao"
+argomento_c = "True"
+
+# RICHIAMO LA FUNZIONE
+funzione_2 (argomento_1 = argomento_a, argomento_3 = argomento_c, argomento_2 = argomento_b)
+
+# GLI ARGOMENTI VENGONO CARICATI NELLA FUNZIONE
+# CON LA SEGUENTE CORRISPONDENZA :
+# ARGOMENTO_1 = ARGOMENTO_A
+# ARGOMENTO_2 = ARGOMENTO_C
+# ARGOMENTO_3 = ARGOMENTO_B
 ```
+
+
+- **Argomenti di default:** Gli argomenti di default vengono utilizzati per fornire sempre alla funzione uno o più dati in modo garantito. È importante sottolineare che i dati all'interno dell'argomento che noi forniamo possono essere sovrascritti in qualunque momento. Ciò che è garantito è solo un dato di base, il quale è utile per evitare di ricevere errori dalla funzione in caso non si passino tutti gli argomenti promessi. È importante però tenere a mente che *gli argomenti di default devono essere sempre gli ultimi passati alla funzione*. Vediamo un esempio :
+```
+# CREAZIONE DELLA FUNZIONE
+def funzione_3 (argomento_1, argomento_3, argomento_2 = "CIAO !") :
+  # CONTENUTO DELLA FUNZIONE
+  print(argomento_1, argomento_2, argomento_3)
+
+# MAIN
+
+argomento_a = "3"
+argomento_b = "Salve !"
+argomento_c = "True"
+
+# RICHIAMO LA FUNZIONE
+funzione_3 (argomento_a, argomento_c, argomento_b)
+
+# GLI ARGOMENTI VENGONO CARICATI NELLA FUNZIONE
+# CON LA SEGUENTE CORRISPONDENZA :
+# ARGOMENTO_1 = ARGOMENTO_A
+# ARGOMENTO_2 = ARGOMENTO_B
+# ARGOMENTO_3 = ARGOMENTO_C
+```
+
+
+
+- **Argomenti posizionali arbitrari:** Gli argomenti posizionali arbitrari hanno lo stesso funzionamento 
+
 
 
 
