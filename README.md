@@ -20,9 +20,9 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
   - Introduzione ed utilizzo della checkbox
 
 - **CAPITOLO 4**
-  - Introduzione ed utilizzo della griglia
-  - Introduzione ed utilizzo
   - Approfondimento della creazione e dei parametri delle finestre
+  - Introduzione ed utilizzo della griglia
+
 
 > [!IMPORTANT]
 > #### La guida è attualmente in allestimento.
