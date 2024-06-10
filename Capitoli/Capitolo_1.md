@@ -25,7 +25,7 @@ Nonostante per la prima parte della guida siano necessari solo ```Gtk``` ed ```A
 Prima di procedere oltre è necessario chiarire i concetti di funzione, classe e oggetto all'interno di Pyhton, in modo da poter comprendere meglio le strtture e la sintassi che andremo ad utilizzare successivamente.
 
 ### Concetto di funzione
-La definizione più semplice e corretta che possiamo dare di una funzione all'interno di un linguaggio di programmazione è "insieme di istruzioni riutilizzabili". Difatti una funzione altro non è che un insieme di istruzioni che possiamo richiamare a comando in un qualunque punto del nostro programma. Una funzione può essere utilizza a priori senza passaggio di variabili dall'esterno, può essere utilizzata acquisendo varibili esterne ed è possibile far uscire dei dati dal suo interno attraverso l'istruzione return. In ogni caso, tutte e funzioni vanno dichiarate prima dell'inzio del programma principale o "main". Vediamo tre esempi di funzioni con queste caratteristiche :
+La definizione più semplice e corretta che possiamo dare di una funzione all'interno di un linguaggio di programmazione è "insieme di istruzioni riutilizzabili". Difatti una funzione altro non è che un insieme di istruzioni che possiamo richiamare in un qualunque punto del nostro programma. Una funzione può essere utilizza a priori senza passaggio di variabili dall'esterno, può essere utilizzata acquisendo varibili esterne ed è possibile far uscire dei dati dal suo interno attraverso l'istruzione return. In ogni caso, tutte e funzioni vanno dichiarate prima dell'inzio del programma principale o "main". Vediamo tre esempi di funzioni con queste caratteristiche :
 
 Esempio di funzione senza passaggio di variabili :
 ```
