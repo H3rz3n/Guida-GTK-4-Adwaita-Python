@@ -79,7 +79,7 @@ print("Il risultato è : ", d)
 ```
 
 #### Introduzione e spiegazione delle tipologie di argomenti nelle funzioni :
-È importante sapere che vi sono diversi tipi di argomenti che possiamo passare alle funzioni ed ognuno ha caratteristiche specifiche a seconda delle per rispondere a varie esigenze. Spesso le varie tipologie possono anche essere utilizzate contemporaneamente, seppur richiedendo il giusto ordinamento. Analizziamo la lista completa e spieghiamole con alcuni esempi :
+È importante sapere che vi sono diversi tipologie di argomenti che possiamo passare alle funzioni ed ognuno ha caratteristiche specifiche a seconda delle per rispondere a varie esigenze. Spesso le varie tipologie possono anche essere utilizzate contemporaneamente, seppur richiedendo il giusto ordinamento. Analizziamo la lista completa e spieghiamole con alcuni esempi :
 
 - **01 | Argomenti posizionali:** Quando utilizziamo gli argomenti posizionali comunichiamo alla funzione che le arriveranno un preciso numero di fonti di dati in un preciso ordine. Non vengono specificate le origini, ma gli argomenti passati alla funzione devono coincedere in numero con quelli che la funzione si aspetta di ricevere. Vediamo un esempio :
 ```python
