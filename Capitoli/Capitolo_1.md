@@ -25,7 +25,7 @@ Nonostante per la prima parte della guida siano necessari solo ```Gtk``` ed ```A
 Prima di procedere oltre è necessario chiarire i concetti di funzione, classe e oggetto all'interno di Pyhton, in modo da poter comprendere meglio le strtture e la sintassi che andremo ad utilizzare successivamente.
 
 ### Concetto di funzione
-La definizione più semplice e corretta che possiamo dare di una funzione all'interno di un linguaggio di programmazione è "insieme di istruzioni riutilizzabili". Difatti una funzione altro non è che un insieme di istruzioni che possiamo richiamare in un qualunque punto del nostro programma. Una funzione può essere utilizza a priori senza passaggio di variabili dall'esterno, può essere utilizzata acquisendo varibili esterne ed è possibile far uscire dei dati dal suo interno attraverso l'istruzione return. In ogni caso, tutte e funzioni vanno dichiarate prima dell'inzio del programma principale o "main". Vediamo tre esempi di funzioni con queste caratteristiche :
+La definizione più semplice e corretta che possiamo dare di una funzione all'interno di un linguaggio di programmazione è "insieme di istruzioni riutilizzabili". Difatti una funzione altro non è che un insieme di istruzioni che possiamo richiamare in un qualunque punto del nostro programma. Una funzione può essere sia utilizzata a priori senza passaggio di variabili dall'esterno, sia essere utilizzata acquisendo varibili esterne. Inoltre è possibile far uscire dei dati dal suo interno attraverso l'istruzione return. In ogni caso, tutte e funzioni vanno dichiarate prima dell'inzio del programma principale o "main". Vediamo tre esempi di funzioni le caratteristiche sopra elencate :
 
 Esempio di funzione senza passaggio di variabili :
 ```
@@ -87,7 +87,7 @@ La classe è un concetto fondamentale della programmazione ad oggetti e può ess
 > - L'insieme degli ingredienti della torta : **le proprietà / caratteristiche della classe**
 > - Le varie occasioni per preparare la torta : **I metodi della classe / funzioni dell'oggetto**
 
-La domanda che vi sorgerà spontanea è : "Dove e come rientra l'oggetto in questo insieme ?" **L'oggetto non è altro che la torta**. Noi possiamo avere avere una classe in grado di fornire diversi gusti di torte. Approfondiamo meglio la questione con esempio semplificato :
+La domanda che vi sorgerà spontanea è : "Dove e come rientra l'oggetto in questo insieme ?" **L'oggetto non è altro che la torta**. Approfondiamo meglio la questione con esempio semplificato :
 
 ```
 # CREO LA CLASSE DELLA TORTA
@@ -105,7 +105,7 @@ class torta () :
     print("Complimenti per il tuo successo ! Ecco la tua torta !")
   
 ```
-Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di un costruttore, del resto nessuna torta si prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. Il metodo costruttore `__init__` per poter funzionare appieno necessita del parametro`self` al suo interno. Il parametro self serve a distingure le proprietà dell'oggetto da eventuali variabili locali di lavoro utilizzate all'interno della classe, le quali non devono essere considerate come proprietà dell'oggetto. Esso si chiama self poichè riferisce a se stesso, ossia al costruttore `__init___`, che le variabili che contengono self come apice sono delle proprietà di cui tenere conto quando il costruttore `__init__` andrà a generare il nostro oggetto. Vediamo meglio la sintassi ed il funzionamento di `__init__` e `self` con un esempio :
+Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di un costruttore, del resto nessuna torta si prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. Il metodo costruttore `__init__` per poter funzionare appieno necessita del parametro`self` al suo interno. Il parametro `self` serve a distingure le proprietà dell'oggetto da eventuali variabili locali di lavoro utilizzate all'interno della classe, le quali non devono essere considerate come proprietà dell'oggetto. Esso si chiama self poichè riferisce a se stesso, ossia al costruttore `__init___`, che le variabili che contengono self come apice sono delle proprietà di cui tenere conto quando il costruttore `__init__` andrà a generare il nostro oggetto. Vediamo meglio la sintassi ed il funzionamento di `__init__` e `self` con un esempio :
 ```
 # CREO LA CLASSE DELLA TORTA
 class torta () :
@@ -118,8 +118,8 @@ class torta () :
     self.gusto = ""
   
     # VARIABILI DI LAVORO
-    casa = ""
-    barbabietola = ""
+		casa = ""
+		barbabietola = ""
 ```
 Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe passando al costruttore altri argomenti oltre a `self`. Ci sono diversi tipi di argomenti che possiamo usare a seconda delle nostre esigenze ed le varie tipologie possono anche essere utilizzate contemporaneamente. Vediamo la lista completa con alcuni esempi :
 
@@ -151,27 +151,27 @@ funzione_1 (argomento_b, argomento_c, argomento_a )
 
 
 
-- **02 | Argomenti per parola chiave:** Quando utilizziamo gli argomenti per parola chiave comunichiamo alla funzione di aspettarsi un numero definito di argomenti ed anche il nome specifico dell'argomento che gli verrà passato. In questo caso gli argomenti possono essere passati alla funzione in un qualunque ordine poichè viene utilizzato come riferimento il nome dell'argomento. Vediamo un esempio :
+- **02 | Argomenti per parola chiave:** Quando utilizziamo gli argomenti per parola chiave comunichiamo alla funzione di aspettarsi un numero definito di argomenti ed anche il nome/tipologia specifica dell'argomento che gli verrà passato. In questo caso gli argomenti possono essere passati alla funzione in un qualunque ordine poichè viene utilizzato come riferimento il nome dell'argomento. Vediamo un esempio :
 ```
 # CREAZIONE DELLA FUNZIONE
 def funzione_2 (argomento_1, argomento_2, argomento_3) :
-  # CONTENUTO DELLA FUNZIONE
+	# CONTENUTO DELLA FUNZIONE
   print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
 
-argomento_a = "3"
-argomento_b = "ciao"
-argomento_c = "True"
+argomento_nome = "Mario"
+argomento_cognome = "Rossi"
+argomento_eta = "17"
 
 # RICHIAMO LA FUNZIONE
-funzione_2 (argomento_1 = argomento_a, argomento_3 = argomento_c, argomento_2 = argomento_b)
+funzione_2 (argomento_1 = argomento_nome, argomento_2 = argomento_cognome, argomento_3 = argomento_eta)
 
 # GLI ARGOMENTI VENGONO CARICATI NELLA FUNZIONE
 # CON LA SEGUENTE CORRISPONDENZA :
-# ARGOMENTO_1 = ARGOMENTO_A
-# ARGOMENTO_2 = ARGOMENTO_C
-# ARGOMENTO_3 = ARGOMENTO_B
+# ARGOMENTO_1 = ARGOMENTO_NOME
+# ARGOMENTO_2 = ARGOMENTO_COGNOME
+# ARGOMENTO_3 = ARGOMENTO_ETA
 ```
 
 
@@ -200,12 +200,15 @@ funzione_3 (argomento_a, argomento_c, argomento_b)
 
 
 
-- **04 | Argomenti posizionali arbitrari:** Quando utilizziamo gli argomenti posizionali arbitrari sitamo comunicando alla funzione che non sappiamo quanti argomenti gli passeremo, ma che essi saranno passati in un preciso ordine. Questi dati veranno tenuti in memoria all interno di un tuple dentro la funzione. Lo standard informale e comune vuole si che utilizzi il parametro `*args` per passare i vari parametri, ma sintattatticamente parlando possiamo utilizzare un qualunque nome purchè sia preceduto da un asterisco. Vediamo un esempio :
+- **04 | Argomenti posizionali arbitrari:** Quando utilizziamo gli argomenti posizionali arbitrari sitamo comunicando alla funzione che non sappiamo quanti argomenti gli passeremo, ma che essi saranno passati in un preciso ordine. Questi dati veranno tenuti in memoria  dentro la funzione all interno di un tuple. Ciò implica che gli argomenti verranno archiviati all'interno della funzione in ordine di presentazione in un unica sezione. Lo standard informale e comune vuole si che utilizzi il parametro `*args` per passare i vari parametri, ma sintattatticamente parlando possiamo utilizzare un qualunque nome purchè sia preceduto da un asterisco. Vediamo un esempio :
 ```
 # CREAZIONE DELLA FUNZIONE
 def funzione_4 (*args) :
-  # CONTENUTO DELLA FUNZIONE
-  print("Ciao, questi sono i nomi : ", args)
+
+  # STAMPIAMO TUTTE GLI ARGOMENTI CARICATI NELLA FUNZIONE
+	for campo in args :
+		print(campo)
+  
 
 # MAIN
 
@@ -218,12 +221,68 @@ funzione_4 (argomento_a, argomento_c, argomento_b)
 
 # GLI ARGOMENTI VENGONO CARICATI NELLA FUNZIONE
 # CON LA SEGUENTE CORRISPONDENZA :
-# ARGS = ARGOMENTO_A ARGOMENTO_C ARGOMENTO_B
+# ARGS =
+#ARGOMENTO_A
+#ARGOMENTO_C
+#ARGOMENTO_B
 ```
 
 
 
-- **05 | Argomenti per parola chiave arbitrari:**
+- **05 | Argomenti per parola chiave arbitrari:** Quando utilizziamo gli argomenti per parola chiave arbitrari stiamo comunicando alla funzione che non sappiamo quanti argomenti gli passeremo, ma sappiamo il nome/tipologia di questi. Questi dati veranno tenuti in memoria dentro la funzione all interno di un dizionario. Ciò implica che gli argomenti verranno acquisiti e gestiti all'interno della funzione sequendo uno una schema chiave-valore, cioè in due sezioni. Lo standard informale e comune vuole si che utilizzi il parametro `*kwargs` per passare i vari parametri, ma sintattatticamente parlando possiamo utilizzare un qualunque nome purchè sia preceduto da due asterischi. Vediamo un esempio :
+```
+# CREAZIONE DELLA FUNZIONE
+def funzione_5 (**kwargs) :
+
+	# STAMPIAMO TUTTE LE COMBINAZIONI CHIAVE-VALORE CARICATE NELLA FUNZIONE
+    for chiave, valore in kwargs.items(): 
+        print(chiave, ":", valore)
+
+# MAIN
+
+argomento_nome = "Mario"
+argomento_cognome = "Rossi"
+argomento_eta = "17"
+
+# RICHIAMO LA FUNZIONE
+funzione_5 (Nome = argomento_nome, Cognome = argomento_cognome, Eta = argomento_eta)
+
+# GLI ARGOMENTI VENGONO CARICATI NELLA FUNZIONE
+# CON LA SEGUENTE CORRISPONDENZA :
+# KWARGS =
+# CHIAVE    VALORE
+#-------------------
+# NOME      MARIO
+# COGNOME   ROSSI
+# ETA       17
+```
+
+
+
+- **06 | Argomenti *solo* per parola chiave:** Quando utilizziamo questa opzione la funzione accetterà solo argomenti per parola chiave. Per poter ottenere questa funzionalità è necessario dichiarare come primo argomento ad inizio funzione un asterisco. Vediamolo con un esempio :
+```
+# CREAZIONE DELLA FUNZIONE
+def funzione_2 (*, argomento_1, argomento_2, argomento_3) :
+	# CONTENUTO DELLA FUNZIONE
+  print(argomento_1, argomento_2, argomento_3)
+
+# MAIN
+
+argomento_nome = "Mario"
+argomento_cognome = "Rossi"
+argomento_eta = "17"
+
+# RICHIAMO LA FUNZIONE
+funzione_2 (argomento_1 = argomento_nome, argomento_2 = argomento_cognome, argomento_3 = argomento_eta)
+
+# GLI ARGOMENTI VENGONO CARICATI NELLA FUNZIONE
+# CON LA SEGUENTE CORRISPONDENZA :
+# ARGOMENTO_1 = ARGOMENTO_NOME
+# ARGOMENTO_2 = ARGOMENTO_COGNOME
+# ARGOMENTO_3 = ARGOMENTO_ETA
+```
+
+
 
 
 
