@@ -8,7 +8,7 @@ import sys, gi
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
 
-# IMPORTO I MODULI SECONDARI DELLA RACCOLTA GI
+# IMPORTO I MODULI SECONDARI DALLA RACCOLTA GI
 from gi.repository import Gtk, Adw, Gdk, Pango, Gio, GLib
 ```
 #### Spiegazione del codice : 
