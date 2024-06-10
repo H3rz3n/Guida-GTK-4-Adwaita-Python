@@ -142,7 +142,7 @@ funzione_2 (argomento_1 = argomento_nome, argomento_2 = argomento_cognome, argom
 def funzione_3 (argomento_1, argomento_3, argomento_2 = "CIAO !") :
 
 	# CONTENUTO DELLA FUNZIONE
-  print(argomento_1, argomento_2, argomento_3)
+	print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
 
@@ -167,7 +167,7 @@ funzione_3 (argomento_a, argomento_c, argomento_b)
 # CREAZIONE DELLA FUNZIONE
 def funzione_4 (*args) :
 
-  # STAMPIAMO TUTTE GLI ARGOMENTI CARICATI NELLA FUNZIONE
+	# STAMPIAMO TUTTE GLI ARGOMENTI CARICATI NELLA FUNZIONE
 	for campo in args :
 		print(campo)
   
