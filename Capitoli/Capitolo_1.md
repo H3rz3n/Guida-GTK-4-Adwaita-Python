@@ -89,6 +89,7 @@ print("Il risultato è : ", d)
 ```python
 # CREAZIONE DELLA FUNZIONE
 def funzione_1 (argomento_1, argomento_2, argomento_3) :
+
   # CONTENUTO DELLA FUNZIONE
   print(argomento_1, argomento_2, argomento_3)
 
@@ -115,7 +116,7 @@ funzione_1 (argomento_b, argomento_c, argomento_a )
 ```python
 # CREAZIONE DELLA FUNZIONE
 def funzione_2 (argomento_1, argomento_2, argomento_3) :
-	# CONTENUTO DELLA FUNZIONE
+# CONTENUTO DELLA FUNZIONE
   print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
@@ -139,7 +140,8 @@ funzione_2 (argomento_1 = argomento_nome, argomento_2 = argomento_cognome, argom
 ```python
 # CREAZIONE DELLA FUNZIONE
 def funzione_3 (argomento_1, argomento_3, argomento_2 = "CIAO !") :
-  # CONTENUTO DELLA FUNZIONE
+
+	# CONTENUTO DELLA FUNZIONE
   print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
@@ -223,6 +225,7 @@ funzione_5 (Nome = argomento_nome, Cognome = argomento_cognome, Eta = argomento_
 ```python
 # CREAZIONE DELLA FUNZIONE
 def funzione_2 (*, argomento_1, argomento_2, argomento_3) :
+
 	# CONTENUTO DELLA FUNZIONE
   print(argomento_1, argomento_2, argomento_3)
 
