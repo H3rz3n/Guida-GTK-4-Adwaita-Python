@@ -33,7 +33,7 @@ La definizione più semplice e corretta che possiamo dare di una funzione all'in
 # DEFINIZIONE DI UNA FUNZIONE SENZA PASSAGGIO DI ARGOMENTI
 def funzione_1 () :
 
-	# CONTENUTO DELLA FUNZIONE
+# CONTENUTO DELLA FUNZIONE
   a = 2
   b = 5
   c = (a + b)*2
@@ -50,7 +50,7 @@ funzione_1()
 # DEFINIZIONE DI UNA FUNZIONE CON PASSAGGIO DI ARGOMENTI
 def funzione_2 (a, b) :
 
-	# CONTENUTO DELLA FUNZIONE
+# CONTENUTO DELLA FUNZIONE
   c = (a + b)*2
   print("funzione due stampa ", c, "a seconda dei parametri 'a' e 'b' che gli passiamo quando la richiamiamo")
 
@@ -68,6 +68,8 @@ funzione_2(a, b)
 ```python
 # DEFINIZIONE DI UNA FUNZIONE CHE UTILIZZA RETURN
 def funzione_3(b) :
+
+# CONTENUTO DELLA FUNZIONE
   a = 3
   c = (a + b)*2
 
@@ -121,7 +123,7 @@ funzione_1 (argomento_b, argomento_c, argomento_a )
 # CREAZIONE DELLA FUNZIONE
 def funzione_2 (argomento_1, argomento_2, argomento_3) :
 
-	# CONTENUTO DELLA FUNZIONE
+# CONTENUTO DELLA FUNZIONE
   print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
@@ -146,8 +148,8 @@ funzione_2 (argomento_1 = argomento_nome, argomento_2 = argomento_cognome, argom
 # CREAZIONE DELLA FUNZIONE
 def funzione_3 (argomento_1, argomento_3, argomento_2 = "CIAO !") :
 
-	# CONTENUTO DELLA FUNZIONE
-	print(argomento_1, argomento_2, argomento_3)
+# CONTENUTO DELLA FUNZIONE
+print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
 
@@ -172,9 +174,9 @@ funzione_3 (argomento_a, argomento_c, argomento_b)
 # CREAZIONE DELLA FUNZIONE
 def funzione_4 (*args) :
 
-	# STAMPIAMO TUTTE GLI ARGOMENTI CARICATI NELLA FUNZIONE
-	for campo in args :
-		print(campo)
+# STAMPIAMO TUTTE GLI ARGOMENTI CARICATI NELLA FUNZIONE
+for campo in args :
+print(campo)
   
 
 # MAIN
@@ -201,9 +203,9 @@ funzione_4 (argomento_a, argomento_c, argomento_b)
 # CREAZIONE DELLA FUNZIONE
 def funzione_5 (**kwargs) :
 
-	# STAMPIAMO TUTTE LE COMBINAZIONI CHIAVE-VALORE CARICATE NELLA FUNZIONE
-	for chiave, valore in kwargs.items(): 
-		print(chiave, ":", valore)
+# STAMPIAMO TUTTE LE COMBINAZIONI CHIAVE-VALORE CARICATE NELLA FUNZIONE
+for chiave, valore in kwargs.items(): 
+print(chiave, ":", valore)
 
 # MAIN
 
@@ -231,8 +233,8 @@ funzione_5 (Nome = argomento_nome, Cognome = argomento_cognome, Eta = argomento_
 # CREAZIONE DELLA FUNZIONE
 def funzione_2 (*, argomento_1, argomento_2, argomento_3) :
 
-  # CONTENUTO DELLA FUNZIONE
-	print(argomento_1, argomento_2, argomento_3)
+# CONTENUTO DELLA FUNZIONE
+print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
 
