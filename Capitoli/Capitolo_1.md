@@ -419,7 +419,7 @@ class torta (dessert):
 	# CREAZIONE DEL METOTO (FUNZIONE) PER MOSTRARE L'OGGETTO	
 	def stampa_info(self):
 
-        # UTILIZZO RETURN PER EVITARE UNA DOPPIA STAMPA
+	        # UTILIZZO RETURN PER EVITARE UNA DOPPIA STAMPA
 		return(f"La torta è grande {self.grandezza}, ha il gusto {self.gusto} ed appartiene a {self.proprietario}. La torta è {self.freschezza}")
 
 # INIZIO MAIN
