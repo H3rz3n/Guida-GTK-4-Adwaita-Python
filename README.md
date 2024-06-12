@@ -8,19 +8,20 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
   - Creazione di una finestra di prova
     
 - **CAPITOLO 2**
+  - A cosa serve e come utilizzare un ID programma
   - Introduzione ed utilizzo dei file UI
   - Introduzione ed utilizzo dei box
   - Come inserire del testo in una finestra con label
-  - Introduzione ed utilizzo dei bottoni
 
 - **CAPITOLO 3**
+  - Introduzione ed utilizzo dei bottoni
   - Introduzione ed utilizzo dei CSS
   - Come inserire un immagine in una finestra con image
   - Introduzione ed utilizzo degli interruttori
-  - Introduzione ed utilizzo della checkbox
 
 - **CAPITOLO 4**
   - Approfondimento delle finestre e dei loro parametri
+  - Introduzione ed utilizzo della checkbox
   - Introduzione ed utilizzo della griglia per i layout
   - Introduzione ed uso delle finestre di dialogo
   - ...
