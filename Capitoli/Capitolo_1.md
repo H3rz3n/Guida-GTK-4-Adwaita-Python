@@ -350,7 +350,7 @@ class dessert ():
     # UTILIZZO DEL COSTRUTTORE INIT
 	def __init__(self, grandezza, gusto, proprietario):
 
-		# PROPRIETÀ DELLA CLASSE
+		# PROPRIETÀ DELLA CLASSE MADRE
 		self.grandezza = grandezza
 		self.gusto = gusto
 		self.proprietario = proprietario
