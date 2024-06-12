@@ -412,7 +412,7 @@ class torta (dessert):
 		# IL COSTRUTTORE INIT DELLA CLASSE MADRE
 		super().__init__(grandezza, gusto, proprietario)
 
-        # PROPRIETÀ DELLA CLASSE FIGLIA
+		# PROPRIETÀ DELLA CLASSE FIGLIA
 		self.freschezza = freschezza
 
 
