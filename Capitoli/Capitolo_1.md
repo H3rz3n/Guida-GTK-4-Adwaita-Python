@@ -440,6 +440,12 @@ print(dolce_2.stampa_info())
 
 
 
+### Creazione di una finestra di prova
+Fatte queste doverese premesse, possiamo entrare nell'vivo dell'azione creando la nostra prima finestra di prova vuota utilizzando GTK ed Adwaita. Creeremo due classi, una che conterrà la macro-finestra e che ci permetterà di mandare a schermo la finestra ed una con GTK, che sarà il contenitore in cui andremo ad inserire successivamente i vari elementi grafici, i widget.
+
+
+
+
 
 
 
