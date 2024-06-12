@@ -385,6 +385,57 @@ print(dolce_2.stampa_info())
 
 
 #### Introduzione e spiegazione della funzione Super()
+Per poter aggiugere proprietà alla classe figlia, ed eventualmente al suo interno sovrascrivere alcune proprietà della classe madre, è necessario utilizzare la funzione `super()` subito dopo la funzione `init`. Essa inoltre ci permette di poter acquisire nuovi argomenti all'interno della classe figlia, rendendola quindi un espansione con tutte le funzionalità della classe madre.
+
+
+
+Quando si utilizza l'ereditarietà è necessario utilizzare la funzione `super` per ereditare il costruttore `init` della classe madre. Il suo utilizzo ci consente di poter acquisire argomenti, aggiungere proprietà e modificare internamente alla classe figlia le proprietà della classe madre, rendendola quindi un espansione con tutte le funzionalità di quest'ultima. Vediamo il suo utilizzo con esempio :
+```python
+# CREAZIONE DELLA CLASSE GENITORE/MADRE
+class dessert ():
+
+    # UTILIZZO DEL COSTRUTTORE INIT
+	def __init__ (self, grandezza, gusto, proprietario):
+
+		# PROPRIETÀ DELLA CLASSE MADRE
+		self.grandezza = grandezza
+		self.gusto = gusto
+		self.proprietario = proprietario
+
+# CREAZIONE DELLA CLASSE FIGLIA
+class torta (dessert):
+    
+	# UTILIZZO DEL COSTRUTTORE INIT NELLA CLASSE FIGLIA
+	def __init__ (self,grandezza, gusto, proprietario, freschezza):
+		
+		# UTILIZZO LA FUNZIONE SUPER PER EREDITARE 
+		# IL COSTRUTTORE INIT DELLA CLASSE MADRE
+		super().__init__(grandezza, gusto, proprietario)
+
+        # PROPRIETÀ DELLA CLASSE FIGLIA
+		self.freschezza = freschezza
+
+
+	# CREAZIONE DEL METOTO (FUNZIONE) PER MOSTRARE L'OGGETTO	
+	def stampa_info(self):
+
+        # UTILIZZO RETURN PER EVITARE UNA DOPPIA STAMPA
+		return(f"La torta è grande {self.grandezza}, ha il gusto {self.gusto} ed appartiene a {self.proprietario}. La torta è {self.freschezza}")
+
+# INIZIO MAIN
+
+# CREAZIONE DELL'OGGETTO DOLCE_1
+dolce_1  = torta("20cm", "cioccolato", "Carlo", "appena fatta")
+
+# CREAZIONE DELL'OGGETTO DOLCE_2
+dolce_2 = torta("30cm", "crema", "Arianna", "fatta ieri")
+
+# STAMPO L'OGGETTO TORTA_1
+print(dolce_1.stampa_info())
+
+# STAMPO L'OGGETTO TORTA_2
+print(dolce_2.stampa_info())
+```
 
 
 
