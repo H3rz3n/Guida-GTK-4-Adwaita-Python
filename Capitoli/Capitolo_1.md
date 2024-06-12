@@ -384,7 +384,7 @@ print(dolce_2.stampa_info())
 
 
 
-#### Introduzione e spiegazione della funzione Super()
+#### Introduzione e spiegazione della funzione super()
 Per poter aggiugere proprietà alla classe figlia, ed eventualmente al suo interno sovrascrivere alcune proprietà della classe madre, è necessario utilizzare la funzione `super()` subito dopo la funzione `init`. Essa inoltre ci permette di poter acquisire nuovi argomenti all'interno della classe figlia, rendendola quindi un espansione con tutte le funzionalità della classe madre.
 
 
