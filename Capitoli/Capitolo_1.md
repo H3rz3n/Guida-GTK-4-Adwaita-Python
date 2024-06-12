@@ -311,7 +311,7 @@ class torta ():
 	# UTILIZZO DEL COSTRUTTORE INIT
 	def __init__(self, grandezza, gusto, proprietario):
 
-		# PROPRIETÀ DELLA TORTA
+		# PROPRIETÀ DELLA CLASSE
 		self.grandezza = grandezza
 		self.gusto = gusto
 		self.proprietario = proprietario
@@ -350,7 +350,7 @@ class dessert ():
     # UTILIZZO DEL COSTRUTTORE INIT
 	def __init__(self, grandezza, gusto, proprietario):
 
-		# PROPRIETÀ DELLA TORTA
+		# PROPRIETÀ DELLA CLASSE
 		self.grandezza = grandezza
 		self.gusto = gusto
 		self.proprietario = proprietario
