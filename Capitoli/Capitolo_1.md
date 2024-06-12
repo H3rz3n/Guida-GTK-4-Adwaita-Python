@@ -177,7 +177,6 @@ def funzione_4 (*args) :
 	# STAMPIAMO TUTTE GLI ARGOMENTI CARICATI NELLA FUNZIONE
 	for campo in args :
 	print(campo)
-  
 
 # MAIN
 
@@ -265,7 +264,7 @@ La classe è un concetto fondamentale della programmazione ad oggetti e può ess
 La domanda che vi sorgerà spontanea è : "Dove e come rientra l'oggetto in questo insieme ?" **L'oggetto non è altro che la torta**. Approfondiamo meglio la questione con esempio semplificato :
 
 ```python
-# CREO LA CLASSE DELLA TORTA
+# CREAZIONE LA CLASSE DELLA TORTA
 class torta () :
 
  	# DEFINISCO LE PROPRIETÀ / CARATTERISTICHE DELLA TORTA
@@ -283,17 +282,17 @@ class torta () :
 #### Introduzione e spiegazione del costruttore __init__ e dell'argomento self
 Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di un costruttore, del resto nessuna torta si prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. Il metodo costruttore `__init__` per poter funzionare appieno necessita del parametro`self` al suo interno. Il parametro `self` serve a distingure le proprietà dell'oggetto da eventuali variabili locali di lavoro utilizzate all'interno della classe, le quali non devono essere considerate come proprietà dell'oggetto. Esso si chiama self poichè riferisce a se stesso, ossia al costruttore `__init___`, che le variabili che contengono self come apice sono delle proprietà di cui tenere conto quando il costruttore `__init__` andrà a generare il nostro oggetto. Vediamo meglio la sintassi ed il funzionamento di `__init__` e `self` con un esempio :
 ```python
-# CREO LA CLASSE DELLA TORTA
+# CREAZIONE LA CLASSE DELLA TORTA
 class torta () :
 
- 	# INSERISCO IL METODO COSTRUTTORE
+ 	# INSERISCO IL METODO COSTRUTTORE INIT
   	def __init__ (self) :
 
-   		# PROPRIETÀ VARIE DELLA TORTA...
-    	self.grandezza = ""
-    	self.gusto = ""
+		# PROPRIETÀ DELLA TORTA...
+    		self.grandezza = ""
+    		self.gusto = ""
   
-    	# VARIABILI DI LAVORO
+    		# VARIABILI DI LAVORO
 		casa = ""
 		barbabietola = ""
 ```
@@ -302,10 +301,45 @@ class torta () :
 
 
 
+#### Introduzione e spiegazione del passaggio di argomenti nelle classi
+Il costruttore `__init__` oltre a self permette l'utilizzo di altri argomenti passati dal main del programma. Ciò ci permette di popolare di dati dinamicante le proprietà di una classe. Vediamolo meglio con un esempio :
+
+```python
+# CREAZIONE DELLA CLASSE
+class torta ():
+
+	# UTILIZZO DEL COSTRUTTORE INIT
+	def __init__(self, grandezza, gusto, proprietario):
+
+		# PROPRIETÀ DELLA TORTA
+		self.grandezza = grandezza
+		self.gusto = gusto
+		self.proprietario = proprietario
+
+	# CREAZIONE DEL METOTO (FUNZIONE) PER MOSTRARE L'OGGETTO	
+	def stampa_info(self):
+
+        # UTILIZZO RETURN PER EVITARE UNA DOPPIA STAMPA
+		return(f"La torta è grande {self.grandezza}, ha il gusto {self.gusto} ed appartiene a {self.proprietario}")
+
+# INIZIO MAIN
+
+# CREAZIONE DELL'OGGETTO DOLCE_1
+dolce_1  = torta("20cm", "cioccolato", "Carlo")
+
+# STAMPO L'OGGETTO TORTA_1
+print(dolce_1.stampa_info())
+```
+
+
+
+
+
 #### Introduzione e spiegazione dell'ereditarietà delle classi
-Le classi possono
+Ogni classe può "ereditare", ossia far suoi, le proprietà ed i metodi di un altra classe. Utilizzando l'ereditarietà delle classi è possibile risparmiare numerose righe di codice, incrementare la leggibilità del proprio lavoro e semplificare eventuali manutenzioni e modifiche. In caso di ereditarietà le classi vengono definite come genitori/madre e figlia/e, in cui la classe che eredità è la figlia e quella che fornice il codice è la madre. Vediamo la sintassi con un esempio :
+```python
 
-
+```
 
 
 
