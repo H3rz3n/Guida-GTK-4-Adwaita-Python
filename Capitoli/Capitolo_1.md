@@ -33,7 +33,7 @@ La definizione più semplice e corretta che possiamo dare di una funzione all'in
 # DEFINIZIONE DI UNA FUNZIONE SENZA PASSAGGIO DI ARGOMENTI
 def funzione_1 () :
 
-# CONTENUTO DELLA FUNZIONE
+	# CONTENUTO DELLA FUNZIONE
   a = 2
   b = 5
   c = (a + b)*2
