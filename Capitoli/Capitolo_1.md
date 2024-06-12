@@ -319,7 +319,7 @@ class torta ():
 	# CREAZIONE DEL METOTO (FUNZIONE) PER MOSTRARE L'OGGETTO	
 	def stampa_info(self):
 
-        # UTILIZZO RETURN PER EVITARE UNA DOPPIA STAMPA
+        	# UTILIZZO RETURN PER EVITARE UNA DOPPIA STAMPA
 		return(f"La torta è grande {self.grandezza}, ha il gusto {self.gusto} ed appartiene a {self.proprietario}")
 
 # INIZIO MAIN
@@ -327,8 +327,14 @@ class torta ():
 # CREAZIONE DELL'OGGETTO DOLCE_1
 dolce_1  = torta("20cm", "cioccolato", "Carlo")
 
+# CREAZIONE DELL'OGGETTO DOLCE_2
+dolce_2 = torta("30cm", "crema", "Arianna")
+
 # STAMPO L'OGGETTO TORTA_1
 print(dolce_1.stampa_info())
+
+# STAMPO L'OGGETTO TORTA_2
+print(dolce_2.stampa_info())
 ```
 
 
