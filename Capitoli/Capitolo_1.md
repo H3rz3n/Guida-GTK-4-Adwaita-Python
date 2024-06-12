@@ -34,10 +34,10 @@ La definizione più semplice e corretta che possiamo dare di una funzione all'in
 def funzione_1 () :
 
 	# CONTENUTO DELLA FUNZIONE
-  a = 2
-  b = 5
-  c = (a + b)*2
-  print("funzione uno stampa sempre ",c)
+	a = 2
+	b = 5
+	c = (a + b)*2
+	print("funzione uno stampa sempre ",c)
 
 # INZIO MAIN
 
@@ -50,9 +50,9 @@ funzione_1()
 # DEFINIZIONE DI UNA FUNZIONE CON PASSAGGIO DI ARGOMENTI
 def funzione_2 (a, b) :
 
-# CONTENUTO DELLA FUNZIONE
-  c = (a + b)*2
-  print("funzione due stampa ", c, "a seconda dei parametri 'a' e 'b' che gli passiamo quando la richiamiamo")
+	# CONTENUTO DELLA FUNZIONE
+	c = (a + b)*2
+  	print("funzione due stampa ", c, "a seconda dei parametri 'a' e 'b' che gli passiamo quando la richiamiamo")
 
 # INIZIO MAIN
 
@@ -69,12 +69,12 @@ funzione_2(a, b)
 # DEFINIZIONE DI UNA FUNZIONE CHE UTILIZZA RETURN
 def funzione_3(b) :
 
-# CONTENUTO DELLA FUNZIONE
-  a = 3
-  c = (a + b)*2
+	# CONTENUTO DELLA FUNZIONE
+  	a = 3
+  	c = (a + b)*2
 
-  # PERMETTO L'USCITA DELLA VARIABILE C DALLA FUNZIONE
-  return c
+  	# PERMETTO L'USCITA DELLA VARIABILE C DALLA FUNZIONE
+  	return c
 
 # INIZIO MAIN
 
@@ -96,8 +96,8 @@ print("Il risultato è : ", d)
 # CREAZIONE DELLA FUNZIONE
 def funzione_1 (argomento_1, argomento_2, argomento_3) :
 
-  # CONTENUTO DELLA FUNZIONE
-  print(argomento_1, argomento_2, argomento_3)
+  	# CONTENUTO DELLA FUNZIONE
+  	print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
 
@@ -123,8 +123,8 @@ funzione_1 (argomento_b, argomento_c, argomento_a )
 # CREAZIONE DELLA FUNZIONE
 def funzione_2 (argomento_1, argomento_2, argomento_3) :
 
-# CONTENUTO DELLA FUNZIONE
-  print(argomento_1, argomento_2, argomento_3)
+	# CONTENUTO DELLA FUNZIONE
+  	print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
 
@@ -148,8 +148,8 @@ funzione_2 (argomento_1 = argomento_nome, argomento_2 = argomento_cognome, argom
 # CREAZIONE DELLA FUNZIONE
 def funzione_3 (argomento_1, argomento_3, argomento_2 = "CIAO !") :
 
-# CONTENUTO DELLA FUNZIONE
-print(argomento_1, argomento_2, argomento_3)
+	# CONTENUTO DELLA FUNZIONE
+	print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
 
@@ -174,9 +174,9 @@ funzione_3 (argomento_a, argomento_c, argomento_b)
 # CREAZIONE DELLA FUNZIONE
 def funzione_4 (*args) :
 
-# STAMPIAMO TUTTE GLI ARGOMENTI CARICATI NELLA FUNZIONE
-for campo in args :
-print(campo)
+	# STAMPIAMO TUTTE GLI ARGOMENTI CARICATI NELLA FUNZIONE
+	for campo in args :
+	print(campo)
   
 
 # MAIN
@@ -203,9 +203,9 @@ funzione_4 (argomento_a, argomento_c, argomento_b)
 # CREAZIONE DELLA FUNZIONE
 def funzione_5 (**kwargs) :
 
-# STAMPIAMO TUTTE LE COMBINAZIONI CHIAVE-VALORE CARICATE NELLA FUNZIONE
-for chiave, valore in kwargs.items(): 
-print(chiave, ":", valore)
+	# STAMPIAMO TUTTE LE COMBINAZIONI CHIAVE-VALORE CARICATE NELLA FUNZIONE
+	for chiave, valore in kwargs.items(): 
+	print(chiave, ":", valore)
 
 # MAIN
 
@@ -231,10 +231,10 @@ funzione_5 (Nome = argomento_nome, Cognome = argomento_cognome, Eta = argomento_
 - **06 | Argomenti *solo* per parola chiave:** Quando utilizziamo questa opzione la funzione accetterà solo argomenti per parola chiave. Per poter ottenere questa funzionalità è necessario dichiarare come primo argomento ad inizio funzione un asterisco. Vediamolo con un esempio :
 ```python
 # CREAZIONE DELLA FUNZIONE
-def funzione_2 (*, argomento_1, argomento_2, argomento_3) :
+def funzione_6 (*, argomento_1, argomento_2, argomento_3) :
 
-# CONTENUTO DELLA FUNZIONE
-print(argomento_1, argomento_2, argomento_3)
+	# CONTENUTO DELLA FUNZIONE
+	print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
 
@@ -243,7 +243,7 @@ argomento_cognome = "Rossi"
 argomento_eta = "17"
 
 # RICHIAMO LA FUNZIONE
-funzione_2 (argomento_1 = argomento_nome, argomento_2 = argomento_cognome, argomento_3 = argomento_eta)
+funzione_6 (argomento_1 = argomento_nome, argomento_2 = argomento_cognome, argomento_3 = argomento_eta)
 
 # GLI ARGOMENTI VENGONO CARICATI NELLA FUNZIONE
 # CON LA SEGUENTE CORRISPONDENZA :
@@ -268,16 +268,16 @@ La domanda che vi sorgerà spontanea è : "Dove e come rientra l'oggetto in ques
 # CREO LA CLASSE DELLA TORTA
 class torta () :
 
-  # DEFINISCO LE PROPRIETÀ / CARATTERISTICHE DELLA TORTA
-  grandezza = ""
-  gusto = ""
+ 	# DEFINISCO LE PROPRIETÀ / CARATTERISTICHE DELLA TORTA
+  	grandezza = ""
+  	gusto = ""
 
-  # DEFINISCO ALCUNE OCCASIONI PER CUI VIENE REALIZZATA
-  def compleanno () :
-    print("Tanti auguri ! Ecco la tua torta !")
+  	# DEFINISCO ALCUNE OCCASIONI PER CUI VIENE REALIZZATA
+  	def compleanno () :
+    	print("Tanti auguri ! Ecco la tua torta !")
 
-  def successo_lavorativo () :
-    print("Complimenti per il tuo successo ! Ecco la tua torta !")
+  	def successo_lavorativo () :
+    	print("Complimenti per il tuo successo ! Ecco la tua torta !")
   
 ```
 #### Introduzione e spiegazione del costruttore __init__ e dell'argomento self
@@ -286,14 +286,14 @@ Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una clas
 # CREO LA CLASSE DELLA TORTA
 class torta () :
 
-  # INSERISCO IL METODO COSTRUTTORE
-  def __init__ (self) :
+ 	# INSERISCO IL METODO COSTRUTTORE
+  	def __init__ (self) :
 
-    # PROPRIETÀ VARIE DELLA TORTA...
-    self.grandezza = ""
-    self.gusto = ""
+   		# PROPRIETÀ VARIE DELLA TORTA...
+    	self.grandezza = ""
+    	self.gusto = ""
   
-    # VARIABILI DI LAVORO
+    	# VARIABILI DI LAVORO
 		casa = ""
 		barbabietola = ""
 ```
