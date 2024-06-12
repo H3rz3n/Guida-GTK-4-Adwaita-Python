@@ -32,6 +32,8 @@ La definizione più semplice e corretta che possiamo dare di una funzione all'in
 ```python
 # DEFINIZIONE DI UNA FUNZIONE SENZA PASSAGGIO DI ARGOMENTI
 def funzione_1 () :
+
+	# CONTENUTO DELLA FUNZIONE
   a = 2
   b = 5
   c = (a + b)*2
@@ -47,6 +49,8 @@ funzione_1()
 ```python
 # DEFINIZIONE DI UNA FUNZIONE CON PASSAGGIO DI ARGOMENTI
 def funzione_2 (a, b) :
+
+	# CONTENUTO DELLA FUNZIONE
   c = (a + b)*2
   print("funzione due stampa ", c, "a seconda dei parametri 'a' e 'b' che gli passiamo quando la richiamiamo")
 
@@ -116,7 +120,8 @@ funzione_1 (argomento_b, argomento_c, argomento_a )
 ```python
 # CREAZIONE DELLA FUNZIONE
 def funzione_2 (argomento_1, argomento_2, argomento_3) :
-# CONTENUTO DELLA FUNZIONE
+
+	# CONTENUTO DELLA FUNZIONE
   print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
@@ -197,8 +202,8 @@ funzione_4 (argomento_a, argomento_c, argomento_b)
 def funzione_5 (**kwargs) :
 
 	# STAMPIAMO TUTTE LE COMBINAZIONI CHIAVE-VALORE CARICATE NELLA FUNZIONE
-    for chiave, valore in kwargs.items(): 
-        print(chiave, ":", valore)
+	for chiave, valore in kwargs.items(): 
+		print(chiave, ":", valore)
 
 # MAIN
 
@@ -227,7 +232,7 @@ funzione_5 (Nome = argomento_nome, Cognome = argomento_cognome, Eta = argomento_
 def funzione_2 (*, argomento_1, argomento_2, argomento_3) :
 
   # CONTENUTO DELLA FUNZIONE
-  print(argomento_1, argomento_2, argomento_3)
+	print(argomento_1, argomento_2, argomento_3)
 
 # MAIN
 
@@ -273,7 +278,7 @@ class torta () :
     print("Complimenti per il tuo successo ! Ecco la tua torta !")
   
 ```
-#### Introduzione e spiegazione del costruttore __init__
+#### Introduzione e spiegazione del costruttore __init__ e dell'argomento self
 Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di un costruttore, del resto nessuna torta si prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. Il metodo costruttore `__init__` per poter funzionare appieno necessita del parametro`self` al suo interno. Il parametro `self` serve a distingure le proprietà dell'oggetto da eventuali variabili locali di lavoro utilizzate all'interno della classe, le quali non devono essere considerate come proprietà dell'oggetto. Esso si chiama self poichè riferisce a se stesso, ossia al costruttore `__init___`, che le variabili che contengono self come apice sono delle proprietà di cui tenere conto quando il costruttore `__init__` andrà a generare il nostro oggetto. Vediamo meglio la sintassi ed il funzionamento di `__init__` e `self` con un esempio :
 ```python
 # CREO LA CLASSE DELLA TORTA
@@ -290,15 +295,13 @@ class torta () :
 		casa = ""
 		barbabietola = ""
 ```
-#### Introduzione e spiegazione dell'argomento self
-Adesso che abbiamo chiarito come viene generato un oggetto è necessario riempire le proprietà all'interno della classe con dati utili. Per farlo dobbiamo fornire alla funzione `__init__` la predisposizione per accettare dati dall'esterno della classe passando al costruttore altri argomenti oltre a `self`. 
 
 
 
 
 
 #### Introduzione e spiegazione dell'ereditarietà delle classi
-
+Le classi possono
 
 
 
