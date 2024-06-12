@@ -344,11 +344,40 @@ print(dolce_2.stampa_info())
 #### Introduzione e spiegazione dell'ereditarietà delle classi
 Ogni classe può "ereditare", ossia far suoi, le proprietà ed i metodi di un altra classe. Utilizzando l'ereditarietà delle classi è possibile risparmiare numerose righe di codice, incrementare la leggibilità del proprio lavoro e semplificare eventuali manutenzioni e modifiche. In caso di ereditarietà le classi vengono definite come genitori/madre e figlia/e, in cui la classe che eredità è la figlia e quella che fornice il codice è la madre. Vediamo la sintassi con un esempio :
 ```python
+# CREAZIONE DELLA CLASSE GENITORE/MADRE
+class dessert ():
 
+    # UTILIZZO DEL COSTRUTTORE INIT
+	def __init__(self, grandezza, gusto, proprietario):
+
+		# PROPRIETÀ DELLA TORTA
+		self.grandezza = grandezza
+		self.gusto = gusto
+		self.proprietario = proprietario
+
+# CREAZIONE DELLA CLASSE FIGLIA
+class torta (dessert):
+
+	# CREAZIONE DEL METOTO (FUNZIONE) PER MOSTRARE L'OGGETTO	
+	def stampa_info(self):
+
+        	# UTILIZZO RETURN PER EVITARE UNA DOPPIA STAMPA
+		return(f"La torta è grande {self.grandezza}, ha il gusto {self.gusto} ed appartiene a {self.proprietario}")
+
+# INIZIO MAIN
+
+# CREAZIONE DELL'OGGETTO DOLCE_1
+dolce_1  = torta("20cm", "cioccolato", "Carlo")
+
+# CREAZIONE DELL'OGGETTO DOLCE_2
+dolce_2 = torta("30cm", "crema", "Arianna")
+
+# STAMPO L'OGGETTO TORTA_1
+print(dolce_1.stampa_info())
+
+# STAMPO L'OGGETTO TORTA_2
+print(dolce_2.stampa_info())
 ```
-
-
-
 
 
 
