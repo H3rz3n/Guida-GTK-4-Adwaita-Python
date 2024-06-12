@@ -441,11 +441,80 @@ print(dolce_2.stampa_info())
 
 
 ### Creazione di una finestra di prova
-Fatte queste doverese premesse, possiamo entrare nell'vivo dell'azione creando la nostra prima finestra di prova vuota utilizzando GTK ed Adwaita. Creeremo due classi, una che conterrà la macro-finestra e che ci permetterà di mandare a schermo la finestra ed una con GTK, che sarà il contenitore in cui andremo ad inserire successivamente i vari elementi grafici, i widget.
+Fatte queste doverese premesse, possiamo entrare nell'vivo dell'azione creando la nostra prima finestra di prova vuota utilizzando Gtk ed Adwaita. Creeremo due classi, una che conterrà la macro-finestra e che ci permetterà di mandare a schermo la finestra ed una con GTK, che sarà il contenitore in cui andremo ad inserire successivamente i vari elementi grafici, i widget.
+- **Classe Adwaita:** Questa classe è la classe figlia di `Adw.Application`, ossia una classe con cui definiamo il nostro utilizzare Adwaita come tema per il nostro programma Gtk. Al suo interno si trovano il trigger Gtk per segnalare l'apertura e l'istruzione che manda a schermo la finestra.
+
+- **Classe Gtk:** Questa classe è la classe figlia di `Gtk.ApplicationWindow`, ossia la classe con cui generiamo la finestra principale del nostro programma Gtk. Al suo interno troviamo due parametri che impostano il titolo della finestra e la sua dimensione all'apertura.
+
+Nel main del programma sono presenti le istruzioni per generare la finestra ed avviarla, assieme all'istruzione per specificare l'ID del programma. Su quest ultimo dettaglio ci concentreremo successivamente, adesso vediamo il codice commentato :
+  
+```python
+# IMPORTO I MODULI PRINCIPALI
+import sys, gi
+
+# SPECIFO LE VERSIONI DI GTK ED ADW CHE ANDREMO AD UTILIZZARE  
+gi.require_version('Gtk', '4.0')
+gi.require_version('Adw', '1')
+
+# IMPORTO I MODULI SECONDARI DALLA RACCOLTA GI
+from gi.repository import Gtk, Adw, Gdk, Pango, Gio, GLib
 
 
 
+# CREAZIONE DELLA CLASSE CONTENITORE DEI WIDGET
+class contenuto_finestra_principale (Gtk.ApplicationWindow):
 
+	# UTILIZZO IL COSTRUTTORE INIT PER GENERARE L'OGGETTO
+	def __init__ (self, *args, **kwargs):
+
+		# UTILIZZO LA FUNZIONE SUPER PER IMPORTARE LE PROPRIETÀ DALLA CLASSE MADRE
+		super().__init__ (*args, **kwargs)
+
+		# PROPRIETÀ / CARATTERISTICHE DELLA FINESTRA PRINCIPALE
+
+		# DEFINISCO LE DIMENSIONI DELLA FINESTRA ALL'AVVIO
+		self.set_default_size(1280,720) #ORIZZONTALE-VERTICALE
+
+		# DEFINISCO IL TITOLO DELLA FINESTRA
+		self.set_title("Prima finestra Gtk + Adw")
+
+
+
+# CREAZIONE DELLA CLASSE CHE MANDA A SCHERMO LA FINESTRA PRICIPALE
+class genera_finestra_principale (Adw.Application):
+
+	# UTILIZZO IL COSTRUTTORE INIT PER GENERARE L'OGGETTO
+	def __init__(self, **kwargs):
+
+		# UTILIZZO LA FUNZIONE SUPER PER IMPORTARE LE PROPRIETÀ DALLA CLASSE MADRE
+		super().__init__(**kwargs)
+
+		# VIENE RICHIAMATA LA FUNZIONE "CONNECT", CON IL QUALE SEGNALIAMO CHE LA FINESTRA È APERTA
+		self.connect('activate', self.attivazione_finestra_principale)
+	
+
+
+	# DEFINISCO LA FUNZIONE / METODO DELLA CLASSE PER GENERARE LA FINESTRA PRINCIPALE
+	def attivazione_finestra_principale(self, finestra_main):
+
+		# CREAZIONE DELL'OGGETTO DELLA FINESTRA PRINCIPALE
+		self.finestra_principale = contenuto_finestra_principale(application=finestra_main)
+
+		# MANDO A SCHERMO LA FINESTRA CON LA FUNZIONE "PRESENT"
+		self.finestra_principale.present()
+
+
+
+# INZIO MAIN
+
+
+
+# DEFINIZIONE DELL'ID DEL PROGRAMMA E DELLA VARIABILE CHE RAPPRESENTA LA FINESTRA DEL PROGRAMMA
+finestra_main = genera_finestra_principale(application_id="com.primoprogrammaGTK.app")
+
+# AVVIO DELLA FINESTRA PRINCIPALE
+finestra_main.run(sys.argv)
+```
 
 
 
