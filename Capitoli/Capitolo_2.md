@@ -14,3 +14,21 @@ Ora che abbiamo visto una panoramica degli usi ed abbiamo consapevolezza della s
 - Ogni sezione dell'ID deve essere composta unicamente da caratteri alfanumerici (A-Z, 0-9), con in aggiunta a questi la possibilità di utilizzare il trattino alto `-` e basso `_`. Inoltre non deve iniziare con una cifra.
 - Non è consentito l'uso di spazi all'interno delle sezioni.
 - Complessivamente l'intero ID deve essere più piccolo di 255 caratteri.
+
+Nel caso in cui non sia possibile scegliere un ID basato su un dominio in nostro possesso si possono utilizzare compromessi come il proprio nome utente su GitHub `com.github.blabla.app` o su risultati analoghi basati su altre piattaforme. È importante ricordare che l'ID programma **non** è il nome del nostro programma per il pubblico, di conseguenza dato che è un indicatore a solo uso del sistema è preferibile essere creativi ed unici anche a discapito delle possibilità commerciali del nome scelto.
+
+
+
+
+# Introduzione ed utilizzo dei file UI
+
+
+
+
+
+
+
+
+
+
+
