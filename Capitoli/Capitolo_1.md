@@ -1,4 +1,4 @@
-## Importare le librerie
+# Importare le librerie
 Per poter iniziare ad utilizzare GTK è necessario importare nel nostro file Python alcune librerie utilizzando il seguente codice :
 
 ```python 
@@ -12,7 +12,7 @@ gi.require_version('Adw', '1')
 # IMPORTO I MODULI SECONDARI DALLA RACCOLTA GI
 from gi.repository import Gtk, Adw, Gdk, Pango, Gio, GLib
 ```
-#### Spiegazione del codice : 
+### Spiegazione del codice : 
 Attraverso questo comando abbiamo importato i moduli ```sys``` e ```gi```, successivamente abbiamo specificato a quest'ultimo quali versioni vogliamo utilizzare di ```GTK``` e ```Adwaita```. 
 Infine abbiamo importato i moduli :
 ```
@@ -22,13 +22,13 @@ Nonostante per la prima parte della guida siano necessari solo ```Gtk``` ed ```A
 
 
 
-## Concetto di classe, oggetto e funzione in Python
+# Concetto di classe, oggetto e funzione in Python
 Prima di procedere oltre è necessario chiarire i concetti di funzione, classe e oggetto all'interno di Pyhton, in modo da poter comprendere meglio le strtture e la sintassi che andremo ad utilizzare successivamente.
 
-### Concetto di funzione
+## Concetto di funzione
 La definizione più semplice e corretta che possiamo dare di una funzione all'interno di un linguaggio di programmazione è "insieme di istruzioni riutilizzabili". Difatti una funzione altro non è che un insieme di istruzioni che possiamo richiamare in un qualunque punto del nostro programma. Una funzione può essere sia utilizzata a priori senza passaggio di argomenti (variabili o costanti) dall'esterno, sia essere utilizzata acquisendo argomenti esterni. Inoltre è possibile far uscire dei dati dal suo interno attraverso l'istruzione return. In ogni caso, tutte le funzioni vanno dichiarate prima dell'inzio del programma principale o "main". Vediamo tre esempi di funzioni con le caratteristiche sopra elencate :
 
-#### Esempio di funzione senza passaggio di argomenti :
+### Esempio di funzione senza passaggio di argomenti :
 ```python
 # DEFINIZIONE DI UNA FUNZIONE SENZA PASSAGGIO DI ARGOMENTI
 def funzione_1 () :
@@ -45,7 +45,7 @@ def funzione_1 () :
 funzione_1()
 ```
 
-#### Esempio di funzione con passaggio di argomenti :
+### Esempio di funzione con passaggio di argomenti :
 ```python
 # DEFINIZIONE DI UNA FUNZIONE CON PASSAGGIO DI ARGOMENTI
 def funzione_2 (a, b) :
@@ -64,7 +64,7 @@ b = int(input("Inserisci numero B : "))
 funzione_2(a, b)
 ```
 
-#### Esempio di funzione con parametro return :
+### Esempio di funzione con parametro return :
 ```python
 # DEFINIZIONE DI UNA FUNZIONE CHE UTILIZZA RETURN
 def funzione_3(b) :
@@ -88,7 +88,7 @@ d = funzione_3(b)
 print("Il risultato è : ", d)
 ```
 
-#### Introduzione e spiegazione delle tipologie di argomenti nelle funzioni :
+### Introduzione e spiegazione delle tipologie di argomenti nelle funzioni :
 È importante sapere che vi sono diversi tipologie di argomenti che possiamo passare alle funzioni ed ognuno ha caratteristiche specifiche a seconda delle per rispondere a varie esigenze. Spesso le varie tipologie possono anche essere utilizzate contemporaneamente, seppur richiedendo il giusto ordinamento. Analizziamo la lista completa e spieghiamole con alcuni esempi :
 
 - **01 | Argomenti posizionali:** Quando utilizziamo gli argomenti posizionali comunichiamo alla funzione che le arriveranno un preciso numero di fonti di dati in un preciso ordine. Non vengono specificate le origini, ma gli argomenti passati alla funzione devono coincedere in numero con quelli che la funzione si aspetta di ricevere. Vediamo un esempio :
@@ -252,7 +252,7 @@ funzione_6 (argomento_1 = argomento_nome, argomento_2 = argomento_cognome, argom
 ```
 
 
-### Concetto di classe ed oggetto
+## Concetto di classe ed oggetto
 #### Introduzione e spiegazione del concetto di classe ed oggetto :
 La classe è un concetto fondamentale della programmazione ad oggetti e può essere definita come il modello o progetto di un oggetto. Un buon esempio per comprendere il legame ed il funzionamento di classi ed oggetti è il seguente :
 > Immaginiamo la classe come un kit molto completo per preparare le torte. In questo kit sono presenti lo stampo per la torta che funge da contenitore e da ricetta per la stessa (la classe), gli ingredienti (le proprietà / caratteristiche dell'oggetto) e le varie occasioni per cui  preparare la torta (i metodi della classe / funzioni dell'oggetto).
@@ -279,7 +279,7 @@ class torta () :
     	print("Complimenti per il tuo successo ! Ecco la tua torta !")
   
 ```
-#### Introduzione e spiegazione del costruttore __init__ e dell'argomento self
+### Introduzione e spiegazione del costruttore __init__ e dell'argomento self
 Ora che abbiamo una maggiore consapevolezza sul funzionamento logico di una classe passiamo ad una spiegazione più formale e tecnicamente accurata. L'oggetto per poter essere costruito a partire dalla classe necessita di un costruttore, del resto nessuna torta si prepara da sola. Ciò che consente alla classe di fornirci un oggetto è il metodo costruttore `__init__`, detto anche inizializzatore. Il metodo costruttore `__init__` per poter funzionare appieno necessita del parametro`self` al suo interno. Il parametro `self` serve a distingure le proprietà dell'oggetto da eventuali variabili locali di lavoro utilizzate all'interno della classe, le quali non devono essere considerate come proprietà dell'oggetto. Esso si chiama self poichè riferisce a se stesso, ossia al costruttore `__init___`, che le variabili che contengono self come apice sono delle proprietà di cui tenere conto quando il costruttore `__init__` andrà a generare il nostro oggetto. Vediamo meglio la sintassi ed il funzionamento di `__init__` e `self` con un esempio :
 ```python
 # CREAZIONE LA CLASSE DELLA TORTA
@@ -301,7 +301,7 @@ class torta () :
 
 
 
-#### Introduzione e spiegazione del passaggio di argomenti nelle classi
+### Introduzione e spiegazione del passaggio di argomenti nelle classi
 Il costruttore `__init__` oltre a self permette l'utilizzo di altri argomenti passati dal main del programma. Ciò ci permette di popolare di dati dinamicante le proprietà di una classe. Vediamolo meglio con un esempio :
 
 ```python
@@ -341,7 +341,7 @@ print(dolce_2.stampa_info())
 
 
 
-#### Introduzione e spiegazione dell'ereditarietà delle classi
+### Introduzione e spiegazione dell'ereditarietà delle classi
 Ogni classe può "ereditare", ossia far suoi, le proprietà ed i metodi di un altra classe. Utilizzando l'ereditarietà delle classi è possibile risparmiare numerose righe di codice, incrementare la leggibilità del proprio lavoro e semplificare eventuali manutenzioni e modifiche. In caso di ereditarietà le classi vengono definite come genitori/madre e figlia/e, in cui la classe che eredità è la figlia e quella che fornice il codice è la madre. Possono esistere più classi figlie che ereditano da una stessa classe madre, ed a propria volta possono esistere classi figlie che ereditano da altre classi figlie. Vediamo la sintassi con un esempio :
 ```python
 # CREAZIONE DELLA CLASSE GENITORE/MADRE
@@ -384,7 +384,7 @@ print(dolce_2.stampa_info())
 
 
 
-#### Introduzione e spiegazione della funzione super()
+### Introduzione e spiegazione della funzione super()
 Per poter aggiugere proprietà alla classe figlia, ed eventualmente al suo interno sovrascrivere alcune proprietà della classe madre, è necessario utilizzare la funzione `super()` subito dopo la funzione `init`. Essa inoltre ci permette di poter acquisire nuovi argomenti all'interno della classe figlia, rendendola quindi un espansione con tutte le funzionalità della classe madre.
 
 
@@ -440,7 +440,7 @@ print(dolce_2.stampa_info())
 
 
 
-### Creazione di una finestra di prova
+## Creazione di una finestra di prova
 Fatte queste doverese premesse, possiamo entrare nell'vivo dell'azione creando la nostra prima finestra di prova vuota utilizzando Gtk ed Adwaita. Creeremo due classi, una che conterrà la macro-finestra e che ci permetterà di mandare a schermo la finestra ed una con GTK, che sarà il contenitore in cui andremo ad inserire successivamente i vari elementi grafici, i widget.
 - **Classe Adwaita:** Questa classe è la classe figlia di `Adw.Application`, ossia una classe con cui definiamo il nostro utilizzare Adwaita come tema per il nostro programma Gtk. Al suo interno si trovano il trigger Gtk per segnalare l'apertura e l'istruzione che manda a schermo la finestra.
 
