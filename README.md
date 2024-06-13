@@ -8,7 +8,7 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
   - Creazione di una finestra di prova
     
 - **CAPITOLO 2**
-  - A cosa serve e come utilizzare un ID programma
+  - A cosa serve e come scegliere un ID programma
   - Introduzione ed utilizzo dei file UI
   - Introduzione ed utilizzo dei box
   - Come inserire del testo in una finestra con label
