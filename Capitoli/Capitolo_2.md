@@ -21,7 +21,10 @@ Nel caso in cui non sia possibile scegliere un ID basato su un dominio in nostro
 
 
 # Introduzione ed utilizzo dei file UI
-
+Quando si utilizza Gtk, per implementare il contenuto delle finestre all'interno del programma vi sono due soluzioni tecniche simili:
+- Scrivere il contenuto della finestra all'interno di un file `.py` come abbiamo fatto con la finestra di prova.
+- Scrivere il contenuto della finestra all'interno di un file `.ui` dedicato.
+Lo standard utilizzato è il secondo, in quanto ci consente di semplificare in parte la scrittura e l'organizzazione dei widget e soprattutto consente una maggiore semplificazione e pulizia del file python in cui risiede il codice delle varie funzioni del programma.
 
 
 
