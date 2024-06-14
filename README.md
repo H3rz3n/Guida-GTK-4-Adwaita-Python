@@ -10,7 +10,7 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
 - [**CAPITOLO 2**](/Capitoli/Capitolo_2.md)
   - A cosa serve e come scegliere un ID programma
   - Introduzione ed utilizzo dei file UI
-  - Piccola guida alle buone norme di programmazione
+  - Piccolo riassunto delle buone norme di programmazione
   - Introduzione ed utilizzo dei box
   - Come inserire del testo in una finestra con label
 
