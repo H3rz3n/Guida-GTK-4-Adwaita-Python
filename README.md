@@ -10,21 +10,19 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
 - [**CAPITOLO 2**](/Capitoli/Capitolo_2.md)
   - A cosa serve e come scegliere un ID programma
   - Introduzione ed utilizzo dei file UI
-  - Piccolo riassunto delle buone norme di programmazione
-  - Introduzione ed utilizzo dei box
-  - Come inserire del testo in una finestra con label
+  - Piccolo riassunto delle buone norme di programmazione 
 
 - **CAPITOLO 3**
-  - Introduzione ed utilizzo dei bottoni
-  - Introduzione ed utilizzo dei CSS
-  - Come inserire un immagine in una finestra con image
-  - Introduzione ed utilizzo degli interruttori
+  - Guida ai widget : La finestra principale - GtkApplicationWindow
+  - Guida ai widget : I box - GtkBox
+  - Guida ai widget : I testi - GtkLabel
+  - Guida ai widget : I bottoni - GtkButton
 
 - **CAPITOLO 4**
-  - Approfondimento delle finestre e dei loro parametri
-  - Introduzione ed utilizzo della checkbox
-  - Introduzione ed utilizzo della griglia per i layout
-  - Introduzione ed uso delle finestre di dialogo
+  - Guida ai widget : Le caselle di scelta - GtkCheckButton
+  - Guida ai widget : Le immagini - GtkImage
+  - Guida ai widget : Creazione di layout - GtkGrid
+  - Guida ai widget : Menu nella barra del titolo - GtkMenuButton
   - ...
 
 
