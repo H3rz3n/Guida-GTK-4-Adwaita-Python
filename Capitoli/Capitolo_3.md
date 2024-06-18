@@ -42,33 +42,31 @@ Per poter utilizzare GtkApplicationWindow all'interno del file UI è sufficiente
 ## Quali sono le sue proprietà
 Le principali proprietà di GtkApplicationWindow sono le seguenti :
 
-- ### Titolo
+- #### Titolo
 Con il parametro `title` possiamo impostare il titolo della finestra. Esso si dichiara nel file UI come nel seguente esempio :
 ```xml
 <!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
 <object class="GtkApplicationWindow" id="finestra_principale">
 
-<!-- SPECIFICO LE PROPRIETÀ DELLA FINESTRA PRINCIPALE -->
+        <!-- SPECIFICO LE PROPRIETÀ DELLA FINESTRA PRINCIPALE -->
 
-<!-- DEFINISCO IL TITOLO DELLA FINESTRA -->
-<property name="title">Finestra di prova in file .UI</property>
-
-        
+        <!-- DEFINISCO IL TITOLO DELLA FINESTRA -->
+        <property name="title">Finestra di prova in file .UI</property>
 
 <!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
 </object>
 ```
-- ### Larghezza di default
-- ### Altezza di default
-- ### Visibilità della barra dei menu
-- ### Apertura a schermo intero
-- ### Nascondi invece che chiudere
-- ### Possibilità di ridimensionamento
-- ### Dichiarazione della finestra genitore
-- ### Impostare come finestra di dialogo
-- ### Allineamento orizzontale
-- ### Allineamento verticale
-- ### Espansione verticale della finestra
+- #### Larghezza di default
+- #### Altezza di default
+- #### Visibilità della barra dei menu
+- #### Apertura a schermo intero
+- #### Nascondi invece che chiudere
+- #### Possibilità di ridimensionamento
+- #### Dichiarazione della finestra genitore
+- #### Impostare come finestra di dialogo
+- #### Allineamento orizzontale
+- #### Allineamento verticale
+- #### Espansione verticale della finestra
 
 
 
