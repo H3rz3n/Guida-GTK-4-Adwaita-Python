@@ -91,23 +91,33 @@ Con la proprietà `default-height` possiamo impostare l'altezza che avrà la fin
 
 
 - #### Visibilità della barra dei menu
-
+Con la proprietà `show-menubar` possiamo impostare
 
 
 
 
 - #### Apertura a schermo intero
+Con la proprietà `` possiamo impostare
+
 - #### Nascondi invece che chiudere
+Con la proprietà `` possiamo impostare
+
 - #### Possibilità di ridimensionamento
-- #### Dichiarazione della finestra genitore
-- #### Impostare come finestra di dialogo
+Con la proprietà `` possiamo impostare
+
 - #### Allineamento orizzontale
+Con la proprietà `` possiamo impostare
+
 - #### Allineamento verticale
+Con la proprietà `` possiamo impostare
+
 - #### Espansione verticale della finestra
+Con la proprietà `` possiamo impostare
 
 
 
-## Quali sono i suoi metodi
+
+
 
 
 
