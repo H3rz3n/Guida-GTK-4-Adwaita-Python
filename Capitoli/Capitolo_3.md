@@ -59,7 +59,7 @@ Con la proprietà `title` possiamo impostare il titolo della finestra. Accetta c
 
 
 ### Larghezza della finestra all'apertura
-Con la proprietà `default-width` possiamo impostare la larghezza che avrà la finestra all'apertura. Accetta solo valori numeri interi positivi. Essa si dichiara nel file UI come nel seguente esempio :
+Con la proprietà `default-width` possiamo impostare la larghezza che avrà la finestra all'apertura. Accetta solo valori numerici interi positivi. Essa si dichiara nel file UI come nel seguente esempio :
 
 ```xml
 <!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
@@ -75,7 +75,7 @@ Con la proprietà `default-width` possiamo impostare la larghezza che avrà la f
 
 
 ### Altezza della finestra all'apertura
-Con la proprietà `default-height` possiamo impostare l'altezza che avrà la finestra all'apertura. Accetta solo valori numeri interi positivi. Essa si dichiara nel file UI come nel seguente esempio :
+Con la proprietà `default-height` possiamo impostare l'altezza che avrà la finestra all'apertura. Accetta solo valori numerici interi positivi. Essa si dichiara nel file UI come nel seguente esempio :
 
 ```xml
 <!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
