@@ -131,6 +131,57 @@ finestra_main.run(sys.argv)
 
 Se ci soffermiamo ad analizzare meglio il codice python, notiamo che abbiamo elimitato la classe `contenuto_finestra_principale` ed all'interno di `genera_finestra_principale` abbiamo integrato la funzione GtkBuilder() per leggere, ottenere dal file l'oggetto `finestra_principale` e successivamente mandarlo a schermo. Con questa scrittura abbiamo notevomente automentato la leggibilità del nostro programma e semplificato la futura manutenzione ed espansione del codice.
 
+## Gerarchia all'interno del file UI
+La scrittura di un file UI si basa sul rispettare un precisa gerachia e sintassi. Ogni volta che inseriamo un oggetto o un parametro esso andrà sia aperto che chiuso, diponendolo in un preciso ordine. Vediamolo meglio con un esempio :
+```xml
+<!-- SPECIFICHIAMO LA VERSIONE DI XML E LO STANDARD DI CARATTERI -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- INIZIO DELL'INTERFACCIA -->
+<interface>
+
+        <!-- APERTURA DELL'OGGETTO 1-->
+        <object>
+
+             <!-- PROPRIETÀ DELL'OGGETTO 1-->
+            <property></property>
+
+            <!-- APERTURA DELLA DICHIARAZIONE FIGLIO DELL'OGGETTO 2 -->
+            <child>
+
+                <!-- APERTURA DELL'OGGETTO 2 -->
+                <object>
+
+                    <!-- PROPRIETÀ DELL'OGGETTO 2-->
+                    <property></property>
+
+                    <!-- APERTURA DELLA DICHIARAZIONE FIGLIO DELL'OGGETTO 3 -->
+                    <child>
+
+                        <!-- APERTURA DELL'OGGETTO 3 -->
+                        <object>
+
+                            <!-- PROPRIETÀ DELL'OGGETTO 3-->
+                            <property></property>
+                    
+                        <!-- CHIUSURA DELL'OGGETTO 3 -->
+                        </object>
+                
+                    <!-- CHIUSURA DELLA DICHIARAZIONE FIGLIO DELL'OGGETTO 3 -->
+                    </child>
+                    
+                <!-- CHIUSURA DELL'OGGETTO 2 -->
+                </object>
+                
+            <!-- CHIUSURA DELLA DICHIARAZIONE FIGLIO DELL'OGGETTO 2 -->
+            </child>
+            
+        <!-- CHIUSURA DELL'OGGETTO 1 -->
+        </object>
+
+<!-- FINE DELL'INTERFACCIA -->
+</interface>
+```
 
 
 # Piccolo riassunto delle buone norme di programmazione
