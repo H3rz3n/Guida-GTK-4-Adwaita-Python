@@ -1,7 +1,7 @@
 # Indice dei widget
 In questa lista sono elencati i principali widget di GTK 4 ed Adwaita e le loro caratteristiche. La lista è in continua espansione e verrà aggiornata regolarmente non appena verranno testati tutti i widget.
 
-- ### 01 - GtkApplicationWindow - La finestra principale : [link](/Capitoli/Guida_ai_widget/01_GtkApplicationWindow.md)
-- ### 02 - GtkLabel - I testi** : [link](/Capitoli/Guida_ai_widget/02_GtkLabel.md)
-- ### 03 - GtkButton - I bottoni** : [link](/Capitoli/Guida_ai_widget/03_GtkButton.md)
-- ### 04 - GtkCheckList - Le checkbox : [link](/Capitoli/Guida_ai_widget/04_GtkCheckList.md)
+- #### 01 - GtkApplicationWindow - La finestra principale : [link](/Capitoli/Guida_ai_widget/01_GtkApplicationWindow.md)
+- #### 02 - GtkLabel - I testi** : [link](/Capitoli/Guida_ai_widget/02_GtkLabel.md)
+- #### 03 - GtkButton - I bottoni** : [link](/Capitoli/Guida_ai_widget/03_GtkButton.md)
+- #### 04 - GtkCheckList - Le checkbox : [link](/Capitoli/Guida_ai_widget/04_GtkCheckList.md)
