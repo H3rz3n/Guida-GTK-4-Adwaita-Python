@@ -42,7 +42,7 @@ Per poter utilizzare GtkApplicationWindow all'interno del file UI è sufficiente
 ## Quali sono le sue proprietà
 Le principali proprietà di GtkApplicationWindow sono le seguenti :
 
-- #### Titolo
+### Titolo
 Con la proprietà `title` possiamo impostare il titolo della finestra. Accetta caratteri alfanumerici e punteggiatura. Esso si dichiara nel file UI come nel seguente esempio :
 
 ```xml
@@ -58,7 +58,7 @@ Con la proprietà `title` possiamo impostare il titolo della finestra. Accetta c
 
 
 
-- #### Larghezza della finestra all'apertura
+### Larghezza della finestra all'apertura
 Con la proprietà `default-width` possiamo impostare la larghezza che avrà la finestra all'apertura. Accetta solo valori numeri interi positivi. Essa si dichiara nel file UI come nel seguente esempio :
 
 ```xml
@@ -74,7 +74,7 @@ Con la proprietà `default-width` possiamo impostare la larghezza che avrà la f
 
 
 
-- #### Altezza della finestra all'apertura
+### Altezza della finestra all'apertura
 Con la proprietà `default-height` possiamo impostare l'altezza che avrà la finestra all'apertura. Accetta solo valori numeri interi positivi. Essa si dichiara nel file UI come nel seguente esempio :
 
 ```xml
@@ -90,28 +90,28 @@ Con la proprietà `default-height` possiamo impostare l'altezza che avrà la fin
 
 
 
-- #### Visibilità della barra dei menu
+### Visibilità della barra dei menu
 Con la proprietà `show-menubar` possiamo impostare
 
 
 
 
-- #### Apertura a schermo intero
+### Apertura a schermo intero
 Con la proprietà `` possiamo impostare
 
-- #### Nascondi invece che chiudere
+### Nascondi invece che chiudere
 Con la proprietà `` possiamo impostare
 
-- #### Possibilità di ridimensionamento
+### Possibilità di ridimensionamento
 Con la proprietà `` possiamo impostare
 
-- #### Allineamento orizzontale
+### Allineamento orizzontale
 Con la proprietà `` possiamo impostare
 
-- #### Allineamento verticale
+### Allineamento verticale
 Con la proprietà `` possiamo impostare
 
-- #### Espansione verticale della finestra
+### Espansione verticale della finestra
 Con la proprietà `` possiamo impostare
 
 
