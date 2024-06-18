@@ -16,8 +16,8 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
   - Guida ai principali widget di GTK 4 ed Adwaita
  
 - ### [CAPITOLO 4](/Capitoli/Capitolo_4.md)
-  - Analisi di casi d'uso particolari
   - Tutorial di costruzioni grafiche di comune utilizzo
+  - Analisi di casi d'uso particolari
  
 - ### [CAPITOLO 5](/Capitoli/Capitolo_5.md)
   - Trasferire il progetto su Gnome Builder
