@@ -165,10 +165,6 @@ Con la proprietà `resizable` possiamo impostare la finestra per negare all'uten
 
 
 
-### Espansione verticale della finestra
-Con la proprietà `` possiamo impostare
-
-
 
 
 
