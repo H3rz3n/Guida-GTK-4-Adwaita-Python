@@ -44,11 +44,10 @@ Le principali proprietà di GtkApplicationWindow sono le seguenti :
 
 - #### Titolo
 Con la proprietà `title` possiamo impostare il titolo della finestra. Esso si dichiara nel file UI come nel seguente esempio :
+
 ```xml
 <!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
 <object class="GtkApplicationWindow" id="finestra_principale">
-
-        <!-- SPECIFICO LE PROPRIETÀ DELLA FINESTRA PRINCIPALE -->
 
         <!-- DEFINISCO IL TITOLO DELLA FINESTRA -->
         <property name="title">Questo è il mio titolo</property>
@@ -56,7 +55,25 @@ Con la proprietà `title` possiamo impostare il titolo della finestra. Esso si d
 <!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
 </object>
 ```
+
+
+
 - #### Larghezza di default
+Con la proprietà `default-width` possiamo impostare la larghezza che avrà la finestra all'apertura
+
+```xml
+<!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
+<object class="GtkApplicationWindow" id="finestra_principale">
+
+        <!-- DEFINISCO LA LARGHEZZA DI DEFAULT DELLA FINESTRA -->
+        <property name="default-width">800</property>
+
+<!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
+</object>
+```
+
+
+
 - #### Altezza di default
 - #### Visibilità della barra dei menu
 - #### Apertura a schermo intero
