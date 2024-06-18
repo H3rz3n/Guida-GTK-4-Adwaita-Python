@@ -1,7 +1,7 @@
 # Guida all'utilizzo di GTK 4 ed Adwaita 1.0 in Python
 Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adwaita con il linguaggio Python. Attraverso brevi spiegazioni ed esempi scopriremo le fondamenta della programmazione ad oggetti attraverso l'uso di GTK 4 ed Adwaita fino ad arrivare alla creazione di programmi per GNU-Linux perfettamente integrati in GNOME.
 
-![]()
+![](/Immagini/BannerGithub.png)
 
 ## Indice dei contenuti
 - ### [CAPITOLO 1](Capitoli/Capitolo_1.md)
