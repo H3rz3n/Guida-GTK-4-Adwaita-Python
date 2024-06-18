@@ -1,9 +1,8 @@
 # Guida ai widget : La finestra principale - GtkApplicationWindow
 È giunto il momento di introdurre tutti i principali widget di Gtk, vedere il loro utilizzo ed i loro parametri. Iniziamo il nostro percorso approfondendo il widget più importante di tutti, la nostra finestra principale.
 
-## A cosa serve il widget
-GtkApplicationWindow è una derivazione di GtkWindow il quale rappresenta la finestra del nostro programma. Esso è il contenitore che racchiude al suo interno tutti i widget dell'interfaccia, difatti tutti i widget sono considerati suoi figli, gerarchicamente parlando, all'interno del file UI.
-
+## A cosa serve e caratteristiche di base del widget
+GtkApplicationWindow è una derivazione di GtkWindow il quale rappresenta la finestra del nostro programma. Esso è il contenitore che racchiude al suo interno tutti i widget dell'interfaccia, difatti tutti i widget sono considerati suoi figli, gerarchicamente parlando, all'interno del file UI. Di default GtkApplicationWindow utilizza come titolo il nome del file da cui è stato evocato.
 
 
 
@@ -14,11 +13,88 @@ GtkApplicationWindow è una derivazione di GtkWindow il quale rappresenta la fin
 
 
 
-
 ## Come si dichiara nel file UI
-Per poter utilizzare
+Per poter utilizzare GtkApplicationWindow all'interno del file UI è sufficiente utilizzare la seguente sintassi :
+```xml
+<!-- SPECIFICHIAMO LA VERSIONE DI XML E LO STANDARD DI CARATTERI -->
+<?xml version="1.0" encoding="UTF-8"?>
 
+
+<!-- INIZIO DELL'INTERFACCIA -->
+<interface>
+
+    <!-- SPECIFICO LE LIBRERIE RICHIESTE -->
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="Adw" version="1.0"/>
+
+    <!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
+    <object class="GtkApplicationWindow" id="finestra_principale">
+
+    <!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
+    </object>
+
+<!-- FINE DELL'INTERFACCIA -->
+</interface>
+```
 
 
 
 ## Quali sono le sue proprietà
+Le principali proprietà di GtkApplicationWindow sono le seguenti :
+
+- ### Titolo
+Con il parametro `title` possiamo impostare il titolo della finestra. Esso si dichiara nel file UI come nel seguente esempio :
+```xml
+<!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
+<object class="GtkApplicationWindow" id="finestra_principale">
+
+<!-- SPECIFICO LE PROPRIETÀ DELLA FINESTRA PRINCIPALE -->
+
+<!-- DEFINISCO IL TITOLO DELLA FINESTRA -->
+<property name="title">Finestra di prova in file .UI</property>
+
+        
+
+<!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
+</object>
+```
+- ### Larghezza di default
+- ### Altezza di default
+- ### Visibilità della barra dei menu
+- ### Apertura a schermo intero
+- ### Nascondi invece che chiudere
+- ### Possibilità di ridimensionamento
+- ### Dichiarazione della finestra genitore
+- ### Impostare come finestra di dialogo
+- ### Allineamento orizzontale
+- ### Allineamento verticale
+- ### Espansione verticale della finestra
+
+
+
+## Quali sono i suoi metodi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
