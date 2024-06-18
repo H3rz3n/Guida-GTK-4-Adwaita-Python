@@ -163,29 +163,7 @@ Con la proprietà `resizable` possiamo impostare la finestra per negare all'uten
 </object>
 ```
 
-### Allineamento orizzontale
-Con la proprietà `halign` possiamo impostare l'allineamento orizzontale del contenuto della finestra. Essa accetta come valori solo :
-- `center` (allineamento al centro),
-- `start` (allineamento all'inizio del verso di scrittura, per gli occidentali sinistra),
-- `end` (allineamento alla fine del verso di scrittura, per gli occidentali destra),
-- `fill` (allineamento volto a rimepire tutto lo spazio possibile, allinea al centro se non può espandere il contenuto della finestra),
-- `baseline-center` (allineamento volto a rimepire tutto lo spazio possibile, allineando in base al riferimento fornito),
-- `baseline-fill` (allineamento in base al riferimento fornito),
-il valore di default è `start` e si dichiara nel file UI come nel seguente esempio :
 
-```xml
-<!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
-<object class="GtkApplicationWindow" id="finestra_principale">
-
-        <!-- DEFINISCO L'ALLINEAMENTO ORIZZONTALE DEL CONTENUTO DELLA FINESTRA -->
-        <property name="halign">center</property>
-
-<!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
-</object>
-```
-
-### Allineamento verticale
-Con la proprietà `` possiamo impostare
 
 ### Espansione verticale della finestra
 Con la proprietà `` possiamo impostare
