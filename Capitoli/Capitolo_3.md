@@ -8,7 +8,11 @@ GtkApplicationWindow è una derivazione di GtkWindow il quale rappresenta la fin
 
 
 ## Rappresentazione grafica
-![](/Immagini/GtkApplicationWindow.png)
+<p align="center">
+  <img src="https://github.com/H3rz3n/Guida-GTK-4-Adwaita-Python/blob/main/Immagini/GtkApplicationWindow.png" alt="GtkApplicationWindow GUI"/>
+</p>
+
+https://github.com/H3rz3n/Guida-GTK-4-Adwaita-Python/blob/main/Immagini/GtkApplicationWindow.png
 
 
 
