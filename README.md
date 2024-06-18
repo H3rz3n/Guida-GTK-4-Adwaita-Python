@@ -12,19 +12,8 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
   - Introduzione ed utilizzo dei file UI
   - Piccolo riassunto delle buone norme di programmazione 
 
-- **CAPITOLO 3**
-  - Guida ai widget : La finestra principale - GtkApplicationWindow
-  - Guida ai widget : I box - GtkBox
-  - Guida ai widget : I testi - GtkLabel
-  - Guida ai widget : I bottoni - GtkButton
-
-- **CAPITOLO 4**
-  - Guida ai widget : Le caselle di scelta - GtkCheckButton
-  - Guida ai widget : Le immagini - GtkImage
-  - Guida ai widget : Creazione di layout - GtkGrid
-  - Guida ai widget : Menu nella barra del titolo - GtkMenuButton
-  - ...
-
+- [**CAPITOLO 3**](/Capitoli/Capitolo_3.md)
+  - Guida ai principali widget di GTK 4 ed Adwaita
 
 > [!IMPORTANT]
 > #### La guida è attualmente in allestimento.
