@@ -8,7 +8,7 @@ GtkApplicationWindow è una derivazione di GtkWindow il quale rappresenta la fin
 
 
 ## Rappresentazione grafica
-
+![]()
 
 
 
