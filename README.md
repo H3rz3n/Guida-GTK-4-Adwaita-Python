@@ -17,6 +17,12 @@ Questo repository vuole essere una semplice introduzione all'uso di GTK 4 ed Adw
  
 - ### [CAPITOLO 4](/Capitoli/Capitolo_4.md)
   - Analisi di casi d'uso particolari
+  - Tutorial di costruzioni grafiche di comune utilizzo
+ 
+- ### [CAPITOLO 5](/Capitoli/Capitolo_5.md)
+  - Trasferire il progetto su Gnome Builder
+  - Come pacchettizzare il proprio applicativo in flatpack
+  - Come pacchettizzare il proprio applicato per sistemi basati su RHEL
 
 > [!IMPORTANT]
 > #### La guida è attualmente in allestimento.
