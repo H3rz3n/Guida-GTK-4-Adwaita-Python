@@ -43,7 +43,7 @@ Per poter utilizzare GtkApplicationWindow all'interno del file UI è sufficiente
 Le principali proprietà di GtkApplicationWindow sono le seguenti :
 
 ### Titolo
-Con la proprietà `title` possiamo impostare il titolo della finestra. Accetta caratteri alfanumerici e punteggiatura. Esso si dichiara nel file UI come nel seguente esempio :
+Con la proprietà `title` possiamo impostare il titolo della finestra. Essa accetta caratteri alfanumerici e punteggiatura, di default il titolo della finestra corrispende al nome del file python da cui viene evocata e si dichiara nel file UI come nel seguente esempio :
 
 ```xml
 <!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
@@ -59,7 +59,7 @@ Con la proprietà `title` possiamo impostare il titolo della finestra. Accetta c
 
 
 ### Larghezza della finestra all'apertura
-Con la proprietà `default-width` possiamo impostare la larghezza che avrà la finestra all'apertura. Accetta solo valori numerici interi positivi. Essa si dichiara nel file UI come nel seguente esempio :
+Con la proprietà `default-width` possiamo impostare la larghezza che avrà la finestra all'apertura. Essa accetta solo valori numerici interi positivi e si dichiara nel file UI come nel seguente esempio :
 
 ```xml
 <!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
@@ -75,7 +75,7 @@ Con la proprietà `default-width` possiamo impostare la larghezza che avrà la f
 
 
 ### Altezza della finestra all'apertura
-Con la proprietà `default-height` possiamo impostare l'altezza che avrà la finestra all'apertura. Accetta solo valori numerici interi positivi. Essa si dichiara nel file UI come nel seguente esempio :
+Con la proprietà `default-height` possiamo impostare l'altezza che avrà la finestra all'apertura. Essa accetta solo valori numerici interi positivi e si dichiara nel file UI come nel seguente esempio :
 
 ```xml
 <!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
@@ -91,19 +91,77 @@ Con la proprietà `default-height` possiamo impostare l'altezza che avrà la fin
 
 
 ### Visibilità della barra dei menu
-Con la proprietà `show-menubar` possiamo impostare
+Con la proprietà `show-menubar` possiamo impostare se mostrare o meno la barra dei menu all'interno della finestra. Essa accetta solo valori booleani `True` o `False`, il valore di default è `True` e si dichiara nel file UI come nel seguente esempio :
 
+```xml
+<!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
+<object class="GtkApplicationWindow" id="finestra_principale">
+
+        <!-- DEFINISCO SE MOSTRARE O MENO LA BARRA DEI MENU DELLA FINESTRA -->
+        <property name="show-menubar">False</property>
+
+<!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
+</object>
+```
 
 
 
 ### Apertura a schermo intero
-Con la proprietà `` possiamo impostare
+Con la proprietà `fullscreened` possiamo impostare se mostrare la finestra a schermo intero senza bottoni di controllo delle dimensioni. Essa accetta solo valori booleani `True` o `False`, il valore di default è `False` e si dichiara nel file UI come nel seguente esempio :
+
+```xml
+<!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
+<object class="GtkApplicationWindow" id="finestra_principale">
+
+        <!-- DEFINISCO SE MOSTRARE LA FINESTRA A SCHERMO INTERO -->
+        <property name="fullscreened">True</property>
+
+<!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
+</object>
+```
+
+### Apertura della finestra massimizzata
+Con la proprietà `maximized` possiamo impostare se mostrare la finestra massimizzata e con bottoni di controllo delle dimensioni. Essa accetta solo valori booleani `True` o `False`, il valore di default è `False` e si dichiara nel file UI come nel seguente esempio :
+
+```xml
+<!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
+<object class="GtkApplicationWindow" id="finestra_principale">
+
+        <!-- DEFINISCO SE MOSTRARE LA FINESTRA MASSIMIZZATA -->
+        <property name="maximized">True</property>
+
+<!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
+</object>
+```
 
 ### Nascondi invece che chiudere
-Con la proprietà `` possiamo impostare
+Con la proprietà `hide-on-close` possiamo impostare la finestra in modo tale che se chiusa dall'utente non interrompa il programma che rappresenta. Essa accetta solo valori booleani `True` o `False`, il valore di default è `False` e si dichiara nel file UI come nel seguente esempio :
+
+```xml
+<!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
+<object class="GtkApplicationWindow" id="finestra_principale">
+
+        <!-- DEFINISCO SE NON CHIUDERE IL PROCESSO ALLA CHIUSURA DELLA FINESTRA -->
+        <property name="hide-on-close">True</property>
+
+<!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
+</object>
+```
 
 ### Possibilità di ridimensionamento
-Con la proprietà `` possiamo impostare
+Con la proprietà `resizable` possiamo impostare la finestra per negare all'utente la possibilità di ridimensionamento della stessa. Essa accetta solo valori booleani `True` o `False`, il valore di default è `True` e si dichiara nel file UI come nel seguente esempio :
+
+
+```xml
+<!-- CREAZIONE DELLA FINESTRA PRINCIPALE -->
+<object class="GtkApplicationWindow" id="finestra_principale">
+
+        <!-- DEFINISCO SE PERMETTERE ALL'UTENTE DI RIDIMENSIONARE LA FINESTRA -->
+        <property name="resizable">False</property>
+
+<!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
+</object>
+```
 
 ### Allineamento orizzontale
 Con la proprietà `` possiamo impostare
