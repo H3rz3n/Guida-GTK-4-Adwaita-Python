@@ -51,7 +51,7 @@ Con il parametro `title` possiamo impostare il titolo della finestra. Esso si di
         <!-- SPECIFICO LE PROPRIETÀ DELLA FINESTRA PRINCIPALE -->
 
         <!-- DEFINISCO IL TITOLO DELLA FINESTRA -->
-        <property name="title">Finestra di prova in file .UI</property>
+        <property name="title">Questo è il mio titolo</property>
 
 <!-- CHIUSURA DELLA FINESTRA PRINCIPALE -->
 </object>
